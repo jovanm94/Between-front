@@ -160,5 +160,84 @@
   0%, 39%, 100% { opacity: 0; }
   40% { opacity: 1; }
 }
+.header-image{
+  height: 700px;
+}
 
+.servicesImg{
+text-align: center;
+}
+#about{
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 80px;
+}
+#section2{
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: #53bb62;
+  color: #fff;
+  padding-bottom: 80px;
+}
+#section3{
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 80px;
+}
+#team{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: #53bb62;
+  color: #fff;
+  padding-bottom: 80px;
+}
 
+#selectionTab{
+  background-color: #222;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#selectionTab:hover{
+  background-color: #2222221a;
+  border: 2px solid white;
+  -webkit-transition: background-color 800ms linear;
+  -ms-transition: background-color 800ms linear;
+  transition: background-color 800ms linear;
+}
+.selectionParsed{
+  background-color: #3c914e;
+  min-height: 40px;
+  padding: 20px;
+  border-radius: 100px;
+}
+.selectionParsed:hover{
+  background-color: #286735;
+  border: 2px solid white;
+  -webkit-transition: background-color 800ms linear;
+  -ms-transition: background-color 800ms linear;
+  transition: background-color 800ms linear;
+}
+.selectionParsedWhole{
+  margin-top:20px;
+}
+#companyProfilePararaph{
+  text-align: left;
+  padding-top: 50px;
+}
+.h2Hero{
+  margin-bottom: 80px;
+}

@@ -1,17 +1,10 @@
-.navbar-brand {
-  padding: 0;
-  height: 100%;
-}
-
-.navbar-brand>img {
-  height: 100%;
-}
-
 .logoImage {
   height: 100%;
   padding-top: 10px;
 }
-
+li>a{
+  color: #ffffff!important;
+}
 .navbar.navbar-default {
   position: absolute;
   border-radius: 0;
@@ -31,28 +24,30 @@
 .navbar-wrapper {
   background-color: #fff;
 }
-
+.navBackGrounClr{
+  background-color: #222;
+}
 .nav.navbar-nav {
-  min-height: 80px;
+  min-height: 120px;
+  height: 100%;
   display: flex;
   align-items: center;
+  width: auto;
 }
 
 .nav.navbar-nav>li {
   height: 78px;
   display: flex;
   align-items: center;
-  width: 145px;
+  width: 120px;
   display: flex;
   justify-content: center;
-  border-left-width: 1px;
+  border-left-width: 0px;
   border-left-style: solid;
-  -webkit-border-image: -webkit-linear-gradient(bottom, #3999AC, rgba(0, 0, 0, 0)) 1 100%;
-  -moz-border-image: -moz-linear-gradient(bottom, #3999AC, rgba(0, 0, 0, 0)) 1 100%;
-  -o-border-image: -o-linear-gradient(bottom, #3999AC, rgba(0, 0, 0, 0)) 1 100%;
-  border-image: linear-gradient(to top, #3999AC, rgba(0, 0, 0, 0)) 1 100%;
 }
-
+.nav.navbar-nav>ul{
+    float: right;
+}
 .menu-item-bg {
   overflow: hidden;
 }
@@ -73,7 +68,7 @@
 
 .login-menu-item>a,
 .login-menu-item>a:hover {
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
 }
 
@@ -86,8 +81,8 @@
 }
 
 .nav.navbar-nav>li>div>a {
-  font-size: 18px;
-  color: #fff;
+  color: #ffffff;
+  font-size: 16px;
   padding: 0;
   margin: auto;
 }
@@ -107,9 +102,16 @@
 .dropdown-menu > li {
   cursor: pointer;
 }
-
+.navbar-inverse{
+  border-color: rgba(1,1,1,0);
+  background-color: rgba(1,1,1,0);
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
 .dropdown-menu>li>a {
-  color: #fff;
+  color: #ffffff;
+  font-size: 16px;
   padding: 8px 30px;
   border-bottom: 1px solid #14252F;
 }
@@ -150,6 +152,7 @@
     display: block;
   }
   .nav.navbar-nav {
+
     min-height: 50px;
     display: block;
   }
@@ -180,7 +183,7 @@
     .icon-bar {
       background-color: #fff;
     }
-  }    
+  }
   .navbar-toggle:hover, .navbar-toggle:focus {
     background-color: #3998AA;
     border-color:  #3998AA;
@@ -191,9 +194,9 @@
   .dropdown-menu > li:first-child > a,
   .dropdown-menu > li:last-child > a {
     border-top-left-radius: 0;
-    border-top-right-radius: 0;  
-    border-bottom-left-radius: 0; 
-    border-bottom-right-radius: 0; 
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -201,4 +204,11 @@
   .dropdown.open {
     border-top: 1px solid #fff!important;
    }
+}
+
+.scrollFadeOut {
+  background-color: #222;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
