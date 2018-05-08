@@ -5,9 +5,8 @@ import { SigninComponent } from './signin/signin.component';
 import { AuthGuard } from './auth-guard.service';
 
 const routes: Routes = [
-  { path: 'registracija', component: SignupComponent, canActivate: [AuthGuard] },
-  // { path: 'prijava', component: SigninComponent, canActivate: [AuthGuard] },
-  { path: 'prijava', component: SigninComponent }
+  { path: 'register', component: SignupComponent, canActivate: [AuthGuard] },
+  { path: 'login', component: SigninComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

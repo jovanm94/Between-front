@@ -30,7 +30,8 @@ export class AuthGuard implements CanActivate, CanDeactivate<CanComponentDeactiv
     //   this.appService.redirectTo('prijava');
     //   return false;
     // }
-    return false;
+    // return false;
+    return true;
   }
 
   canDeactivate(component: CanComponentDeactivate) {
@@ -61,7 +62,8 @@ export class AuthGuard implements CanActivate, CanDeactivate<CanComponentDeactiv
     //   this.appService.setRedirectToRoute(route.path);
     //   return false;
     // }
-    return false;
+    // return false;
+    return true;
   }
 
 }

@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-
-// import { AppRoutingModule } from '../app/app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule} from '@angular/forms';
 import { AuthService } from '../auth/auth.service';
+import { AppRoutingModule } from '../app/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,12 +14,11 @@ import { AuthService } from '../auth/auth.service';
     HomeComponent
   ],
   imports: [
-    // AppRoutingModule,
+    AppRoutingModule,
     CommonModule,
     FormsModule
   ],
   exports: [
-    // AppRoutingModule,
     HeaderComponent,
     FooterComponent
   ],

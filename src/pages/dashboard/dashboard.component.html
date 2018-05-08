@@ -1,0 +1,32 @@
+<div class="dashboard-wrapper container-fluid">
+  <div class="flex">
+    <div class="dashboard-menu">
+      <ul>
+        <li>
+          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Dashboard/Home</a>
+        </li>
+        <li >
+          <!--<a routerLink="./mojeRazmene" routerLinkActive="active-dashboard-menu-item">Moje razmene-->
+            <!--<span class="badge notification-badge" *ngIf="notificationsService.numOfNotifications > '0'">-->
+              <!--{{notificationsService.numOfNotifications}}</span>-->
+          <!--</a>-->
+        </li>
+        <li>
+          <a routerLink="./invoices/received" routerLinkActive="active-dashboard-menu-item">Received Invoices</a>
+        </li>
+        <li>
+          <a routerLink="./invoices/issued" routerLinkActive="active-dashboard-menu-item">Issued Invoices</a>
+        </li>
+        <li>
+          <a routerLink="./invoices/verified" routerLinkActive="active-dashboard-menu-item">Verified Invoices</a>
+        </li>
+        <li>
+          <a routerLink="./invoices/draft" routerLinkActive="active-dashboard-menu-item">Draft Invoices</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dashboard-editor">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

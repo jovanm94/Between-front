@@ -1,0 +1,22 @@
+.page-not-found-text {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #00727E;
+}
+
+.pnf-logo {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+.page-not-found-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}

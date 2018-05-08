@@ -6,34 +6,28 @@
     <div class="row">
     <div class="col-md-12">
       <div class="col-md-2">
-        <a href="#top"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
+        <a [routerLink]="['/']"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
       </div>
       <div class="col-md-10">
         <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="#about">Login</a>
-        </li>
-        <li>
-          <a href="#services">Registracija</a>
-        </li>
-        <li>
-          <a href="#about">Home</a>
-        </li>
-        <li>
-          <a href="#services">Who we are</a>
-        </li>
-        <li>
-          <a href="#about">Platform</a>
-        </li>
-        <li>
-          <a href="#services">Services/Tools</a>
-        </li>
-        <li>
-          <a href="#about">Careers</a>
-        </li>
-        <li>
-          <a href="#services">Contact</a>
-        </li>
+          <li>
+            <a [routerLink]="['/']">Home</a>
+          </li>
+          <li>
+            <a [routerLink]="['/dashboard']">Dashboard</a>
+          </li>
+          <li>
+            <a [routerLink]="['/']">Platform</a>
+          </li>
+          <li>
+            <a [routerLink]="['/']">Contact</a>
+          </li>
+          <li>
+            <a [routerLink]="['/login']">Login</a>
+          </li>
+          <li>
+            <a [routerLink]="['/register']">Register</a>
+          </li>
       </ul>
     </div>
     </div>
