@@ -17,7 +17,6 @@ export class AppComponent {
     } else {
       this.isScrolling = false;
     }
-    console.log($event.target.documentElement.scrollTop)
   }
 
     constructor() { }
