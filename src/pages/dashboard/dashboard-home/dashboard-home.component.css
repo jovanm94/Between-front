@@ -1,0 +1,46 @@
+.dashBoardHomePage{
+  padding: 10px;
+  height: 600px;
+  background-color: grey;
+}
+.companyName{
+  background-color: white;
+  padding: 5px;
+  padding-left: 2px;
+}
+.overview{
+  padding: 5px;
+  background-color: #83f5a9!important;
+}
+.companyStatus{
+  color: white;
+  margin-top: 22px;
+  background-color: #14252f;
+  padding: 20px;
+  font-size: 16px
+}
+.aboutCompany{
+  color: white;
+  margin-top: 3px;
+  background-color: #18a94a;
+  padding: 8px;
+  font-size: 16px
+}
+.companyItem{
+  color: white;
+  padding: 20px;
+  padding-left: 20px;
+  height: 215px;
+  background-color: #14252f;
+  border-left: 3px solid #808080;
+  margin-top: 3px;
+}
+.firstCompItem{
+  border-left: 0 solid grey!important;
+}
+.imgHolder {
+  text-align: center;
+}
+.imgHolder img{
+  height: 100%;
+}

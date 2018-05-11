@@ -220,13 +220,10 @@ text-align: center;
 }
 .selectionParsed{
   background-color: #3c914e;
-  min-height: 40px;
+  min-height: 200px;
   padding: 20px;
-  border-radius: 100px;
 }
 .selectionParsed:hover{
-  background-color: #286735;
-  border: 2px solid white;
   -webkit-transition: background-color 800ms linear;
   -ms-transition: background-color 800ms linear;
   transition: background-color 800ms linear;
@@ -234,10 +231,22 @@ text-align: center;
 .selectionParsedWhole{
   margin-top:20px;
 }
+.selectionParsed>h3{
+  font-size: 20px;
+}
 #companyProfilePararaph{
   text-align: left;
   padding-top: 50px;
 }
 .h2Hero{
   margin-bottom: 80px;
+}
+.redPane{
+  background-color: #F44336;
+}
+.yellowPane{
+  background-color: #ffc107;
+}
+.bluePane{
+  background-color: #007ac7;;
 }

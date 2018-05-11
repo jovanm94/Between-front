@@ -3,7 +3,7 @@
   padding-top: 10px;
 }
 li>a{
-  color: #ffffff!important;
+  color: #ffffff;
 }
 .navbar.navbar-default {
   position: absolute;
@@ -14,7 +14,6 @@ li>a{
   border: none;
   box-shadow: none;
   background-image: none;
-  background-color: transparent;
   border-bottom: 1px solid #3999AC;
   height: 80px;
   padding-top: 0;
@@ -99,8 +98,7 @@ li>a{
   border-radius: 10px;
 }
 
-.dropdown-menu > li {
-  cursor: pointer;
+.dropdown-menu > li {    cursor: pointer;
 }
 .navbar-inverse{
   border-color: rgba(1,1,1,0);
@@ -205,10 +203,14 @@ li>a{
     border-top: 1px solid #fff!important;
    }
 }
-
 .scrollFadeOut {
-  background-color: #222;
-  -webkit-transition: background-color 300ms linear;
-  -ms-transition: background-color 300ms linear;
-  transition: background-color 300ms linear;
+background-color: #fff;
+box-shadow: 0px 0px 20px #808080;
+  -webkit-transition: background-color 650ms linear;
+  -ms-transition: background-color 650ms linear;
+  transition: background-color 650ms linear;
+}
+.scrollFadeOutLinks>li>a{
+     color: grey!important;
+     font-weight: bold;
 }

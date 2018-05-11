@@ -9,6 +9,9 @@
 /*body {*/
   /*margin-top: 50px; !* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. *!*/
 /*}*/
+body{
+      font-family: "Helvetica Neue",Verdana!important;
+}
 
 .navbar-header img {
   margin: 10px 300px 10px 10px;
@@ -27,7 +30,7 @@
 }
 
 .headline {
-  padding: 120px 0;
+  padding: 160px 0;
   color: white;
 }
 

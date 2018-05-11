@@ -1,0 +1,12 @@
+.issuedInvoicesPage{
+  padding: 10px;
+  height: 600px;
+  background-color: grey;
+}
+.issuedInvoices{
+  color: white;
+  margin-top: 22px;
+  background-color: #14252f;
+  padding: 20px;
+  font-size: 16px
+}

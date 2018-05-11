@@ -1,4 +1,11 @@
+.dashboarHeaderPanel{
+  background-color: #18a94a;
+  height: 50px;
+  width: 100%;
+  padding: 16px;
+}
 .dashboard-menu {
+  margin-left: -15px;
   background-color: #14252F;
   padding: 16px 0 0 0;
   -webkit-order: 0;
@@ -113,6 +120,7 @@
 
 }
 .dashboard-wrapper {
+  background-color: grey;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
@@ -123,5 +131,10 @@
   -ms-flex-item-align: auto;
   align-self: auto;
   display: flex;
+  width: 100%;
+}
+.dashboardImage{
+  height: 120px;
+  background-color:#14252f;
   width: 100%;
 }
