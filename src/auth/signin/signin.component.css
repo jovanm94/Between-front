@@ -44,6 +44,7 @@
 }
 .sign-in-image{
   padding: 150px;
+  height: 100vh;
   display: block;
   width: 100%;
   text-align: center;

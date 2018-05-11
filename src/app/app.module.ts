@@ -32,8 +32,7 @@ import { PageNotFoundComponent } from '../pages/page-not-found/page-not-found.co
     CoreModule,
     UiModule,
     // mainRoutingModule
-    AppRoutingModule,
-    AngularMaterial
+    AppRoutingModule
   ],
   providers: [
     AppService,

@@ -11,6 +11,7 @@
 /*}*/
 body{
       font-family: "Helvetica Neue",Verdana!important;
+      background-color: #303742;
 }
 
 .navbar-header img {
@@ -174,22 +175,21 @@ footer {
   display: inline-block!important;
 }
 footer{
-  color: #53bb62!important;
+  color: #efefef!important;
+  background-color: #303742;
   height: 100px;
-  background-color: #222222;
   margin: 0 0 0 0!important;
   width:100%!important;
   padding: 25px;
 }
 footer a{
-  color: #53bb62!important;
+  color: #efefef!important;
 }
-.socialMediaIcons{
-  float: right;
-}
+
 .socialMediaIcons>a{
   font-size: 30px;
   padding: 10px;
+  float: right!important;
 }
 .socialMediaIcons>a:hover{
 text-decoration: none!important;

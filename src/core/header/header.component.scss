@@ -27,7 +27,7 @@ li>a{
   background-color: #222;
 }
 .nav.navbar-nav {
-  min-height: 120px;
+  min-height: 100px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -204,7 +204,7 @@ li>a{
    }
 }
 .scrollFadeOut {
-background-color: #fff;
+background-color:rgba(239, 239, 239, 0.9);
 box-shadow: 0px 0px 20px #808080;
   -webkit-transition: background-color 650ms linear;
   -ms-transition: background-color 650ms linear;

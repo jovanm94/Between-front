@@ -164,8 +164,10 @@
   height: 700px;
 }
 
-.servicesImg{
-text-align: center;
+.paddingLeftCircle{
+padding-left: 4%;
+padding-top: 4%;
+padding-bottom: 4%;
 }
 #about{
   width: 100%;
@@ -173,6 +175,7 @@ text-align: center;
   text-align: center;
   display: inline-block;
   padding-bottom: 80px;
+  background-color: #efefef;
 }
 #section2{
   margin-left: 0;
@@ -180,18 +183,19 @@ text-align: center;
   width: 100%;
   padding-top: 50px;
   text-align: center;
-  display: inline-block;
-  background-color: #53bb62;
+  display: block;
+  background-color: #303742;
   color: #fff;
   padding-bottom: 80px;
 }
 #section3{
+  background-color: #efefef;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
   padding-top: 50px;
   text-align: center;
-  display: inline-block;
+  display: block;
   padding-bottom: 80px;
 }
 #team{
@@ -200,8 +204,8 @@ text-align: center;
   margin-right: 0;
   padding-top: 50px;
   text-align: center;
-  display: inline-block;
-  background-color: #53bb62;
+  display: block;
+  background-color: #303742;
   color: #fff;
   padding-bottom: 80px;
 }
@@ -218,35 +222,67 @@ text-align: center;
   -ms-transition: background-color 800ms linear;
   transition: background-color 800ms linear;
 }
-.selectionParsed{
-  background-color: #3c914e;
-  min-height: 200px;
-  padding: 20px;
-}
-.selectionParsed:hover{
-  -webkit-transition: background-color 800ms linear;
-  -ms-transition: background-color 800ms linear;
-  transition: background-color 800ms linear;
-}
-.selectionParsedWhole{
-  margin-top:20px;
-}
-.selectionParsed>h3{
-  font-size: 20px;
-}
 #companyProfilePararaph{
   text-align: left;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .h2Hero{
   margin-bottom: 80px;
 }
-.redPane{
-  background-color: #F44336;
+.roundPanel{
+  text-align: center;
+  padding: 50px;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(#168681,#8282828f);
+  border: 2px solid #7b7b7b;
+
+  box-shadow: 0px 0px 0px #52899e;
+  -webkit-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
-.yellowPane{
-  background-color: #ffc107;
+.roundPanel>span{
+  font-size: 80px;
 }
-.bluePane{
-  background-color: #007ac7;;
+.paddingLeftCircle>strong{
+  font-size: 20px;
+  padding: 0!important
+}
+.roundPanel:hover{
+  cursor: pointer;
+  box-shadow: 0px 2px 30px #0f1010;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.roundPanel>strong{
+  font-size: 15px;
+}
+.companyImg{
+  height: 100%;
+  width: 100%;
+}
+.contactDetails{
+  padding: 20px;
+}
+.contactDetails>input{
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #303742;
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0);
+}
+@media screen and (max-width: 992px) {
+  .roundPanel{
+    height: 120px;
+    width: 120px;
+    padding: 30px 0 0 0;
+  }
+  .roundPanel>span{
+    font-size: 50px;
+  }
 }
