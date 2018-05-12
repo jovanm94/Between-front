@@ -1,28 +1,12 @@
 .headingPanelDashboard{
-  background-color: #132541;
-  height: 100px;
+  background-color: #354052;
+  height: 105px;
   width: 100%;
   padding: 16px;
 }
-.dashboard-menu {
-  margin-left: -15px;
-  background-color: #132541;
-  padding: 16px 0 0 0;
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 0;
-  -webkit-flex: 1 1 10%;
-  -ms-flex: 1 1 10%;
-  flex: 1 1 10%;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
-}
-
-.dashboard-menu>ul {
-  text-decoration: none;
-  list-style: none;
-  padding: 0;
+.accordionDivStyle{
+  background-color: #354052;
+  margin-left: -14px;
 }
 
 .dashboard-menu>ul>li {
@@ -87,7 +71,7 @@
 
 .dashboard-editor {
       height: 100vh;
-  padding: 0 60px;
+  padding: 0 10px;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
@@ -121,7 +105,7 @@
 
 }
 .dashboard-wrapper {
-background: linear-gradient(#122440, #c4e2c4);
+background: white;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;

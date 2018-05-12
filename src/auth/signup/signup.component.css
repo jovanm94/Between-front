@@ -47,7 +47,7 @@
   display: block;
   width: 100%;
   text-align: center;
-  background: linear-gradient(#122440, #c4e2c4);
+  background: linear-gradient(to bottom right, #83f5a9, #6d00d0, #29adc7);  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

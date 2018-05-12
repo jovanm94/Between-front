@@ -12,16 +12,15 @@
   color: #303742;
     margin-top: 10px;
     background-color: #efefef;
-    box-shadow: 1px 0px 9px grey;
+    box-shadow: 1px 0px 9px ;
     padding: 15px;
-
     font-size: 22px;
 }
 .companyDetails{
   color: #303742;
     margin-top: 20px;
     background-color: #efefef;
-    box-shadow: 1px 0px 9px grey;
+    box-shadow: 1px 0px 9px #c1c1c1;
     padding: 15px;
     font-size: 14px;
     height: 250px;
@@ -30,7 +29,7 @@
   color: #303742;
     margin-top: 20px;
     background-color: #efefef;
-    box-shadow: 1px 0px 9px grey;
+    box-shadow: 1px 0px 9px #c1c1c1;
     padding: 15px;
     font-size: 14px;
     height: 300px;

@@ -191,8 +191,7 @@ padding-bottom: 4%;
   text-align: center;
   display: inline-block;
   padding-bottom: 80px;
-
-      background: linear-gradient(#efefef, #fff);
+background-color: white;
 }
 #section2{
   margin-left: 0;
@@ -214,6 +213,16 @@ padding-bottom: 4%;
   text-align: center;
   display: block;
   padding-bottom: 80px;
+}
+#aboutUS{
+  background-color: #efefef;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  display: block;
+  padding-bottom: 120px;
 }
 #team{
   width: 100%;
@@ -241,7 +250,6 @@ padding-bottom: 4%;
 }
 #companyProfilePararaph{
   text-align: left;
-  padding-top: 20px;
 }
 .h2Hero{
   margin-bottom: 80px;
@@ -279,6 +287,7 @@ padding-bottom: 4%;
   font-size: 15px;
 }
 .companyImg{
+  border-radius: 5%;
   height: 100%;
   width: 100%;
 }
