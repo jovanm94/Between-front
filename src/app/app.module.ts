@@ -22,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PageNotFoundComponent
   ],
   imports: [
+    // pagesModules
+    AuthModule,
     // angularModules
     BrowserModule,
     BrowserAnimationsModule,
@@ -29,8 +31,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     CoreModule,
     UiModule,
-    // pagesModules
-    AuthModule,
     // mainRoutingModule
     AppRoutingModule
   ],

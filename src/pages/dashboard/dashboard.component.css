@@ -1,19 +1,19 @@
-.dashboarHeaderPanel{
-  background-color: #18a94a;
-  height: 50px;
+.headingPanelDashboard{
+  background-color: #303742;
+  height: 100px;
   width: 100%;
   padding: 16px;
 }
 .dashboard-menu {
   margin-left: -15px;
-  background-color: #14252F;
+  background-color: #303742;
   padding: 16px 0 0 0;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
-  -webkit-flex: 1 1 20%;
-  -ms-flex: 1 1 20%;
-  flex: 1 1 20%;
+  -webkit-flex: 1 1 10%;
+  -ms-flex: 1 1 10%;
+  flex: 1 1 10%;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
@@ -120,7 +120,7 @@
 
 }
 .dashboard-wrapper {
-  background-color: grey;
+background-image: url("../../assets/images/login-bg.png");
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
@@ -132,9 +132,11 @@
   align-self: auto;
   display: flex;
   width: 100%;
+  height: auto;
 }
 .dashboardImage{
   height: 120px;
-  background-color:#14252f;
+  background-color:#efefef;
   width: 100%;
+  background-image: url("../../assets/images/login-bg.png");
 }

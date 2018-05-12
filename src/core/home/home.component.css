@@ -1,3 +1,19 @@
+.heroButton{
+  background-color: #29adc7;
+    border-radius: 17px;
+    border: 1px solid #8fa99c;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 50px;
+    height: 80px;
+    width: 250px;
+    transition: background-color 1s linear;
+    font-size: 20px;
+}
+.heroButton:hover{
+  background-color: #19aaff;
+  transition: background-color 1s linear;
+}
 #addBlinkID {
   display: flex;
   justify-content: center;
@@ -175,7 +191,7 @@ padding-bottom: 4%;
   text-align: center;
   display: inline-block;
   padding-bottom: 80px;
-  background-color: #efefef;
+      background: linear-gradient(#c4e2c4, #efefef);
 }
 #section2{
   margin-left: 0;

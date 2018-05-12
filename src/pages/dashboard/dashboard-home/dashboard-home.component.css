@@ -1,7 +1,6 @@
 .dashBoardHomePage{
   padding: 10px;
   height: 600px;
-  background-color: grey;
 }
 .companyName{
   background-color: white;
@@ -13,30 +12,37 @@
   background-color: #83f5a9!important;
 }
 .companyStatus{
-  color: white;
-  margin-top: 22px;
-  background-color: #14252f;
-  padding: 20px;
-  font-size: 16px
+  color: #303742;
+    margin-top: 10px;
+    background-color: #efefef;
+    box-shadow: 1px 0px 9px grey;
+    padding: 15px;
+    font-size: 14px;
 }
 .aboutCompany{
-  color: white;
-  margin-top: 3px;
-  background-color: #18a94a;
-  padding: 8px;
-  font-size: 16px
+  color: #303742;
+    margin-top: 10px;
+    background-color: #efefef;
+    box-shadow: 1px 0px 9px grey;
+    padding: 15px;
+    font-size: 14px;
 }
 .companyItem{
-  color: white;
-  padding: 20px;
+  width: 50%;
+  margin-right: 0px;
+  color: #303742;
+  margin-top: 10px;
+  background-color: #efefef;
+  box-shadow: 1px 0px 9px grey;
+  font-size: 14px;
   padding-left: 20px;
   height: 215px;
-  background-color: #14252f;
-  border-left: 3px solid #808080;
-  margin-top: 3px;
+  padding: 20px;
 }
 .firstCompItem{
   border-left: 0 solid grey!important;
+  width: 48%;
+  margin-right: 15px;
 }
 .imgHolder {
   text-align: center;

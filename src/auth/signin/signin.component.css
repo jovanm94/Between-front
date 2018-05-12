@@ -1,13 +1,13 @@
 .form-signin {
   width: 100%;
   color: white;
-  max-width: 330px;
+  max-width: 400px;
   text-align: center;
   padding: 40px;
   margin: auto;
-  background-color: #ffffff14;
+  background-color: #0000001f;
   border-radius: 20px;
-  border: 1px solid #ffffff1f;
+  border: 2px solid #ffffff;
   box-shadow: 2px 1px 46px #ffffff61;
   -webkit-transition: box-shadow 700ms linear;
   -ms-transition:box-shadow 700ms linear;
@@ -33,7 +33,7 @@
   z-index: 2;
 }
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
+  margin-bottom: 2px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
