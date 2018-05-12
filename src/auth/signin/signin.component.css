@@ -7,7 +7,6 @@
   margin: auto;
   background-color: #0000001f;
   border-radius: 20px;
-  border: 2px solid #ffffff;
   box-shadow: 2px 1px 46px #ffffff61;
   -webkit-transition: box-shadow 700ms linear;
   -ms-transition:box-shadow 700ms linear;
@@ -48,7 +47,7 @@
   display: block;
   width: 100%;
   text-align: center;
-  background: url('../../assets/images/login-bg.png') no-repeat center center scroll;
+  background: linear-gradient(#122440, #c4e2c4);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

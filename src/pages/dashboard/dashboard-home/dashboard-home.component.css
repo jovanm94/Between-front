@@ -7,25 +7,33 @@
   padding: 5px;
   padding-left: 2px;
 }
-.overview{
-  padding: 5px;
-  background-color: #83f5a9!important;
-}
 .companyStatus{
+  height: 100px;
   color: #303742;
     margin-top: 10px;
     background-color: #efefef;
     box-shadow: 1px 0px 9px grey;
     padding: 15px;
-    font-size: 14px;
+
+    font-size: 22px;
 }
-.aboutCompany{
+.companyDetails{
   color: #303742;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #efefef;
     box-shadow: 1px 0px 9px grey;
     padding: 15px;
     font-size: 14px;
+    height: 250px;
+}
+.companyItems{
+  color: #303742;
+    margin-top: 20px;
+    background-color: #efefef;
+    box-shadow: 1px 0px 9px grey;
+    padding: 15px;
+    font-size: 14px;
+    height: 300px;
 }
 .companyItem{
   width: 50%;
