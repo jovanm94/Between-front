@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { HostListener} from "@angular/core";
+import { HostListener} from '@angular/core';
+import { GlobalsService } from '../services/globals';
 
 @Component({
   selector: 'app-root',
@@ -10,14 +11,14 @@ import { HostListener} from "@angular/core";
 export class AppComponent {
   isScrolling = false;
   @HostListener('window:scroll', ['$event'])
-
   onWindowScroll($event) {
-    if ($event.target.documentElement.scrollTop > 0) {
-      this.isScrolling = true;
-    } else {
-      this.isScrolling = false;
-    }
+
+    this.isScrolling = $event.target.documentElement.scrollTop > 0;
   }
 
-    constructor() { }
+  constructor(public globals: GlobalsService) { }
+
+  getIsScrolling() {
+    return this.isScrolling;
+  }
 }

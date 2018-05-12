@@ -8,6 +8,8 @@ import { ReceivedInvoicesComponent } from './invoices/received-invoices/received
 import { IssuedInvoicesComponent } from './invoices/issued-invoices/issued-invoices.component';
 import { DraftInvoicesComponent } from './invoices/draft-invoices/draft-invoices.component';
 import { VerifiedInvoicesComponent } from './invoices/verified-invoices/verified-invoices.component';
+import { AccordionModule } from 'primeng/components/accordion/accordion';
+import { ToolbarModule } from 'primeng/components/toolbar/toolbar';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { VerifiedInvoicesComponent } from './invoices/verified-invoices/verified
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    AccordionModule,
+    ToolbarModule
   ]
 })
 export class DashboardModule {

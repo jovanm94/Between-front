@@ -7,17 +7,13 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 })
 export class HeaderComponent implements OnChanges {
 
-  @Input() isScrolling: boolean = false;
+  @Input() isScrolling = false;
+  dropdown: any = false;
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['isScrolling'].currentValue == true) {
-      this.isScrolling = true;
-    } else {
-      this.isScrolling = false;
-    }
-    console.log(this.isScrolling)
+    this.isScrolling = changes['isScrolling'].currentValue;
   }
-  dropdown: any = false;
+
   // overEnabled: boolean = true;
 
   // @HostListener('window:resize', ['$event'])

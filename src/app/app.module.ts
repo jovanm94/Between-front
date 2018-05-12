@@ -15,6 +15,7 @@ import { LoaderAndModalService } from '../services/LoaderAndModal.service';
 import { RequestAndResponseInterceptorService } from '../services/RequestAndResponseInterceptor.service';
 import { PageNotFoundComponent } from '../pages/page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {GlobalsService} from '../services/globals';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NotificationsService,
     EventsService,
     LoaderAndModalService,
+    GlobalsService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: RequestAndResponseInterceptorService,
