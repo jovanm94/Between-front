@@ -214,3 +214,18 @@ box-shadow: 0px 0px 20px #808080;
      color: grey!important;
      font-weight: bold;
 }
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 4px;
+  //background: #4caf50;
+  background: #30d464;
+  width: 0%;
+}

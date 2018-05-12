@@ -3,7 +3,7 @@ import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HttpErrorResponse
 import { Observable } from 'rxjs/Observable';
 import { AuthService } from '../auth/auth.service';
 import { LoaderAndModalService } from './LoaderAndModal.service';
-import { AppService } from '../app-routing.service';
+import { AppService } from './app-routing.service';
 
 @Injectable()
 export class RequestAndResponseInterceptorService implements HttpInterceptor {

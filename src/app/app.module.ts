@@ -7,7 +7,7 @@ import { AuthModule } from '../auth/auth.module';
 import { HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { UiModule } from '../ui/ui.module';
 import { CoreModule } from '../core/core.module';
-import { AppService } from '../app-routing.service';
+import { AppService } from '../services/app-routing.service';
 import { CallBroker } from '../services/CallBroker';
 import { NotificationsService } from '../services/notifications.service';
 import { EventsService } from '../services/events.service';
@@ -15,7 +15,7 @@ import { LoaderAndModalService } from '../services/LoaderAndModal.service';
 import { RequestAndResponseInterceptorService } from '../services/RequestAndResponseInterceptor.service';
 import { PageNotFoundComponent } from '../pages/page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {GlobalsService} from '../services/globals';
+import { GlobalsService } from '../services/globals';
 
 @NgModule({
   declarations: [

@@ -28,7 +28,7 @@
             <a [routerLink]="['/dashboard']">Dashboard</a>
           </li>
           <li>
-            <a [routerLink]="['/']">Contact</a>
+            <a (click)="emitClickEvent('contact')">Contact</a>
           </li>
           <li>
             <a [routerLink]="['/login']">Login</a>
@@ -41,6 +41,9 @@
     </div>
   </div>
     <!-- /.navbar-collapse -->
+  </div>
+  <div class="progress-container" *ngIf="scrolledPercent > 0">
+    <div class="progress-bar" id="myBar" [style.width]="scrolledPercent + '%'"></div>
   </div>
   <!-- /.container -->
 </nav>

@@ -11,4 +11,11 @@ export class FooterComponent {
   constructor(public authService: AuthService) {
   }
 
+  scrollToTop() {
+    try {
+      window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+    } catch (e) {
+      window.scrollTo(0, 0);
+    }
+  }
 }

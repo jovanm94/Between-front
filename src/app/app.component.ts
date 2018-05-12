@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HostListener} from '@angular/core';
-import { GlobalsService } from '../services/globals';
+import {AppService} from '../services/app-routing.service';
 
 @Component({
   selector: 'app-root',
@@ -9,16 +9,18 @@ import { GlobalsService } from '../services/globals';
 })
 
 export class AppComponent {
+
   isScrolling = false;
+  scrolledPercent = 0;
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
-
-    this.isScrolling = $event.target.documentElement.scrollTop > 0;
+    let winScroll = $event.target.documentElement.scrollTop;
+    this.isScrolling = winScroll > 0;
+    let height = $event.target.documentElement.scrollHeight - $event.target.documentElement.clientHeight;
+    this.scrolledPercent = (winScroll / height) * 100;
   }
 
-  constructor(public globals: GlobalsService) { }
+  constructor(public appService: AppService) { }
 
-  getIsScrolling() {
-    return this.isScrolling;
-  }
 }
