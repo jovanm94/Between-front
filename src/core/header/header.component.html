@@ -9,7 +9,7 @@
   </div>
 </div> -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" [ngClass]="{'scrollFadeOut': isScrolling ? true : false}">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" [ngClass]="{'scrollFadeOut': isScrolling}">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -17,10 +17,10 @@
     <div class="row">
     <div class="col-md-12">
       <div class="col-md-2">
-        <a [routerLink]="['/']"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
+        <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
       </div>
       <div class="col-md-10">
-        <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling ? true : false}">
+        <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
           <li>
             <a [routerLink]="['/']">Home</a>
           </li>

@@ -1,7 +1,7 @@
 <div class="sign-in-image">
 <form class="form-signin">
-  <img class="mb-4" src="../../assets/images/betweenLogo.png" alt="" width="80" height="80">
-  <h1 class="h3 mb-3 font-weight-normal">Registration</h1>
+  <img class="mb-4" src="../../assets/images/betweenLogo.png" alt="" width="80" height="80" routerLink="/">
+  <h1 class="h3 mb-3 font-weight-normal">Register to platform</h1>
 
   <div class="row">
     <div class="col-sm-6">
@@ -36,7 +36,7 @@
 
   <div class="checkbox mb-3">
     <label>
-      <input type="checkbox" value="remember-me">Zapamti me
+      <input type="checkbox" value="remember-me">Remember me
     </label>
   </div>
   <div class="row">
@@ -45,6 +45,12 @@
     </div>
   </div>
 
-  <p class="mt-5 mb-3 text-muted" style="margin-top: 20px;">&copy; Between 2018-2019</p>
+  <div class="checkbox mb-3">
+    <label>
+      Already have an account? <span routerLink="/login"><u>Login here</u></span>
+    </label>
+  </div>
+
+  <p class="mt-5 mb-3 text-muted" style="margin-top: 20px;">&copy; Between 2017-2018</p>
 </form>
 </div>
