@@ -1,49 +1,47 @@
 <div class="row">
   <div class="headingPanelDashboard">
+    <div class="col-md-2">
+      <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
+    </div>
   </div>
 </div>
 
 <div class="dashboard-wrapper container-fluid">
   <div class="flex">
 
-    <p-accordion>
-      <p-accordionTab header="Dashboard/Home">
-        Content 1
+    <p-accordion class="accordionDivStyle">
+      <div class="menuTab">
+        <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Dashboard</a><br>
+      </div>
+
+
+      <p-accordionTab header="Invoice Verification">
+        <div class="podMenu podMenuFirst">
+          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Received Invoices</a><br>
+        </div>
+        <div class="podMenu">
+          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Issued Invoices</a><br>
+        </div>
+        <div class="podMenu">
+          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Draft Invoices</a>
+        </div>
       </p-accordionTab>
-      <p-accordionTab header="Header 2">
-        Content 2
-      </p-accordionTab>
-      <p-accordionTab header="Header 3">
-        Content 3
-      </p-accordionTab>
+
+      <div class="menuTab podMenuFirst">
+        <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Request Invoice Financing</a><br>
+      </div>
+
+      <div class="menuTab">
+        <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Generate Reports</a><br>
+      </div>
+
+      <div class="menuTab">
+        <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Counterparties</a><br>
+      </div>
+
     </p-accordion>
 
 
-    <div class="dashboard-menu">
-      <ul>
-        <li>
-          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Dashboard/Home</a>
-        </li>
-        <li >
-          <!--<a routerLink="./mojeRazmene" routerLinkActive="active-dashboard-menu-item">Moje razmene-->
-            <!--<span class="badge notification-badge" *ngIf="notificationsService.numOfNotifications > '0'">-->
-              <!--{{notificationsService.numOfNotifications}}</span>-->
-          <!--</a>-->
-        </li>
-        <li>
-          <a routerLink="./invoices/received" routerLinkActive="active-dashboard-menu-item">Received Invoices</a>
-        </li>
-        <li>
-          <a routerLink="./invoices/issued" routerLinkActive="active-dashboard-menu-item">Issued Invoices</a>
-        </li>
-        <li>
-          <a routerLink="./invoices/verified" routerLinkActive="active-dashboard-menu-item">Verified Invoices</a>
-        </li>
-        <li>
-          <a routerLink="./invoices/draft" routerLinkActive="active-dashboard-menu-item">Draft Invoices</a>
-        </li>
-      </ul>
-    </div>
     <div class="dashboard-editor">
       <router-outlet></router-outlet>
     </div>
