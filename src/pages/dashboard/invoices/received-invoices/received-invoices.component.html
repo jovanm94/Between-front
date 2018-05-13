@@ -29,31 +29,25 @@
     </div>
   </nav>
 
-
-
-  <p-table [value]="cake">
+  <p-table [value]="invoices">
       <ng-template pTemplate="header">
           <tr>
               <th>Invoice Number</th>
               <th>From</th>
               <th>Issuance Date</th>
               <th>Payment Date</th>
-              <th>Amount</th>
+              <th>Payment amount</th>
               <th>Verification Status</th>
-              <!-- <th>Brand</th>
-              <th>Color</th> -->
           </tr>
       </ng-template>
-      <ng-template pTemplate="body" let-car>
+      <ng-template pTemplate="body" let-invoice>
           <tr>
-              <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
-              <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
-              <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
-              <!-- <td>{{car.brand}}</td>
-              <td>{{car.color}}</td> -->
+              <td>{{invoice.number}}</td>
+              <td>{{invoice.from}}</td>
+              <td>{{invoice.issuanceDate}}</td>
+              <td>{{invoice.paymentDate}}</td>
+              <td>{{invoice.paymentAmount}}</td>
+              <td>{{invoice.status}}</td>
           </tr>
       </ng-template>
   </p-table>
