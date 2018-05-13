@@ -1,4 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { EventsService } from '../../services/events.service';
 
 @Component({
   selector: 'app-header',
@@ -8,36 +9,21 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 export class HeaderComponent implements OnChanges {
 
   @Input() isScrolling = false;
-  dropdown: any = false;
+  @Input() scrolledPercent = 0;
+
+  constructor(private eventsService: EventsService) {}
 
   ngOnChanges(changes: SimpleChanges) {
-    this.isScrolling = changes['isScrolling'].currentValue;
+    if (changes.isScrolling && changes.isScrolling.currentValue) {
+      this.isScrolling = changes.isScrolling.currentValue;
+    }
+    if (changes.scrolledPercent && changes.scrolledPercent.currentValue) {
+      this.scrolledPercent = changes.scrolledPercent.currentValue;
+    }
   }
 
-  // overEnabled: boolean = true;
-
-  // @HostListener('window:resize', ['$event'])
-  // onWindowResize(event: any) {
-  //   this.zone.run(() => {
-  //     if (event.target.innerWidth > 768) {
-  //       this.dropdown = false;
-  //       this.overEnabled = true;
-  //     } else {
-  //       this.dropdown = false;
-  //       this.overEnabled = false;
-  //     }
-  //   })
-  // }
-
-  constructor() {
-  }
-
-  over() {
-      this.dropdown = !this.dropdown;
-  }
-
-  logout() {
-    this.dropdown = false;
+  emitClickEvent(pageName: string) {
+    this.eventsService.emitEvent(pageName);
   }
 
 }

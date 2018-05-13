@@ -1,7 +1,7 @@
 import { Injectable, NgZone } from '@angular/core';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
-import { AppService } from '../app-routing.service';
+import { AppService } from '../services/app-routing.service';
 // import { EventsService } from '../services/events.service';
 import { HttpClient } from '@angular/common/http';
 

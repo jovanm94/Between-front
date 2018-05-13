@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 import { AuthService } from './auth.service';
 import { Observable } from 'rxjs/Observable';
-import { AppService } from '../app-routing.service';
+import { AppService } from '../services/app-routing.service';
 
 export interface CanComponentDeactivate {
   canDeactivate: () => Observable<boolean> | Promise<boolean> | boolean;

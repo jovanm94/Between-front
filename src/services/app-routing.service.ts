@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import 'rxjs/add/operator/filter';
 
 @Injectable()
@@ -8,6 +8,15 @@ export class AppService {
   redirectToRoute: string;
 
   constructor(private router: Router) {
+    this.router.events
+      .filter(event => event instanceof NavigationEnd || event instanceof NavigationStart)
+      .subscribe(() => {
+        window.scrollTo(0, 0);
+      });
+  }
+
+  getCurrentRoute() {
+    return this.router.url;
   }
 
   redirectTo(path: any) {
