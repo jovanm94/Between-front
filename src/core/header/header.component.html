@@ -19,7 +19,7 @@
   </div>
 </nav> -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top"  [ngClass]="{'scrollFadeOut': isScrolling}">
+<nav class="navbar navbar-inverse navbar-fixed-top" [ngClass]="{'scrollFadeOut': isScrolling}">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,7 +27,7 @@
       </button>
       <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse headerWithBorder" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
         <li>
           <a [routerLink]="['/']">Home</a>
@@ -36,7 +36,7 @@
           <a [routerLink]="['/dashboard']">Dashboard</a>
         </li>
         <li>
-          <a [routerLink]="['/']">Contact</a>
+          <a (click)="emitClickEvent('contact')">Contact</a>
         </li>
         <li>
           <a [routerLink]="['/login']">Login</a>
@@ -46,5 +46,8 @@
         </li>
       </ul>
     </div>
+  </div>
+  <div class="progress-container" *ngIf="scrolledPercent > 0">
+    <div class="progress-bar" id="myBar" [style.width]="scrolledPercent + '%'"></div>
   </div>
 </nav>
