@@ -124,11 +124,13 @@ footer {
   }
 }
 
-@media(max-width:768px) {
+@media(min-width:768px) {
   .container {
     margin: 0 15px;
   }
-
+  footer{
+    height: 100px!important;
+  }
   .featurette-divider {
     margin: 40px 0;
   }
