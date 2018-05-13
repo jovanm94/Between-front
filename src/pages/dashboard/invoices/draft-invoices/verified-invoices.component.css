@@ -55,30 +55,12 @@ margin-right: -16px;
 #verifyDecline>span:hover{
   cursor: pointer;
   font-weight: bold;
-}#badge{
-  padding-top: 3px;
-  background-color: #43be7f;
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-  padding: 5px;
-  margin-top: 9px;
 }
-#badgeRed{
+#badge{
   padding-top: 3px;
-  color: white;
+  background-color: #20d65f;
   border-radius: 5px;
   text-align: center;
   padding: 5px;
   margin-top: 9px;
-  background-color:#a94442;
-}
-#badgeGrey{
-  padding-top: 3px;
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-  padding: 5px;
-  margin-top: 9px;
-  background-color: #777;
 }

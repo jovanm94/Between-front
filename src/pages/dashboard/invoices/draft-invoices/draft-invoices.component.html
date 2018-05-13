@@ -22,9 +22,6 @@
             <a [routerLink]="['/']"><span class="fa fa-plus"></span>&nbsp;Create Invoice</a>
           </li>
           <li>
-            <a [routerLink]="['/login']"><span class="fa fa-search"></span>&nbsp;Advanced Search</a>
-          </li>
-          <li>
             <a [routerLink]="['/register']"><span class="fa fa-search"></span>&nbsp;Search</a>
           </li>
         </ul>
@@ -43,6 +40,7 @@
               <th>Payment Date</th>
               <th>Amount</th>
               <th>Verification Status</th>
+              <th>Action</th>
               <!-- <th>Brand</th>
               <th>Color</th> -->
           </tr>
@@ -54,7 +52,13 @@
               <td>{{car.id}}</td>
               <td>{{car.type}}</td>
               <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
+              <td>
+                <p id="badgeGrey">Verified</p>
+              </td>
+              <td id="verifyDecline">
+                <span id="verify" class="fa fa-check">&nbsp;Verify</span>&nbsp;&nbsp;&nbsp;
+                <span id="decline" class="fa fa-ban">&nbsp;Decline</span>
+              </td>
               <!-- <td>{{car.brand}}</td>
               <td>{{car.color}}</td> -->
           </tr>

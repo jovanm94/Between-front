@@ -40,6 +40,7 @@
               <th>Payment Date</th>
               <th>Amount</th>
               <th>Verification Status</th>
+              <th>Action</th>
               <!-- <th>Brand</th>
               <th>Color</th> -->
           </tr>
@@ -51,7 +52,13 @@
               <td>{{car.id}}</td>
               <td>{{car.type}}</td>
               <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
+              <td>
+                <p id="badge">Verified</p>
+              </td>
+              <td id="verifyDecline">
+                <span id="verify" class="fa fa-check">&nbsp;Verify</span>&nbsp;&nbsp;&nbsp;
+                <span id="decline" class="fa fa-ban">&nbsp;Decline</span>
+              </td>
               <!-- <td>{{car.brand}}</td>
               <td>{{car.color}}</td> -->
           </tr>
