@@ -43,3 +43,26 @@ margin-right: -16px;
 .nav>li>a:hover{
   color: #354052;
 }
+#verifyDecline{
+  text-align: center;
+}
+#verify{
+  color: #5cb85c;
+}
+#decline{
+  color: #d9534f;
+}
+#verifyDecline>span:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+#badge{
+  /* padding: 22px; */
+background-color: red;
+border-radius: 5px;
+/* height: 27px; */
+/* padding-top: 5px; */
+text-align: center;
+padding: 5px;
+/* margin-top: 5px; */
+}

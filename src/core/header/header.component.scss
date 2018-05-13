@@ -11,13 +11,11 @@
   height: 100%;
   padding-top: 10px;
 }
-#logoName{
+#logoA>a{
+  text-decoration: none;
   font-family: "Agency FB";
   font-size: 22px;
   color: #007ac7;
-}
-li>a{
-  color: white;
 }
 .headerWithBorder {
       border-bottom: 1px solid rgba(255,255,255,0.2);
