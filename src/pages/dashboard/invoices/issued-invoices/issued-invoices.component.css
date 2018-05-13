@@ -8,7 +8,7 @@
   font-weight: bold;
   font-size: 20px;
   padding-left: 35px;
-  padding-top: 15px;
+  padding-top: 7px;
   color: #354052;
 }
 .receivedInvoices>i{
@@ -42,4 +42,43 @@ margin-right: -16px;
 }
 .nav>li>a:hover{
   color: #354052;
+}
+#verifyDecline{
+  text-align: center;
+}
+#verify{
+  color: #5cb85c;
+}
+#decline{
+  color: #d9534f;
+}
+#verifyDecline>span:hover{
+  cursor: pointer;
+  font-weight: bold;
+}#badge{
+  padding-top: 3px;
+  background-color: #43be7f;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 9px;
+}
+#badgeRed{
+  padding-top: 3px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 9px;
+  background-color:#a94442;
+}
+#badgeGrey{
+  padding-top: 3px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 9px;
+  background-color: #777;
 }

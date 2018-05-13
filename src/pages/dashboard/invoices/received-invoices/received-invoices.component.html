@@ -38,6 +38,7 @@
               <th>Payment Date</th>
               <th>Payment amount</th>
               <th>Verification Status</th>
+              <th>Action</th>
           </tr>
       </ng-template>
       <ng-template pTemplate="body" let-invoice>
@@ -48,6 +49,18 @@
               <td>{{invoice.paymentDate}}</td>
               <td>{{invoice.paymentAmount}}</td>
               <td>{{invoice.status}}</td>
+              <td>{{car.id}}</td>
+              <td>{{car.type}}</td>
+              <td>{{car.id}}</td>
+              <td>{{car.type}}</td>
+              <td>{{car.id}}</td>
+              <td>
+                <p id="badgeRed">Verified</p>
+              </td>
+              <td id="verifyDecline">
+                <span id="verify" class="fa fa-check">&nbsp;Verify</span>&nbsp;&nbsp;&nbsp;
+                <span id="decline" class="fa fa-ban">&nbsp;Decline</span>
+              </td>
           </tr>
       </ng-template>
   </p-table>

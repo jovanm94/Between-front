@@ -1,8 +1,9 @@
 .scrollFadeOutLinks>li>a{
-  color: #303742;
+  color: #303742!important;
 }
 .nav>li>a{
   cursor: pointer;
+  color: white;
 }
 .scrollFadeOutLinks>li>a:hover{
 
@@ -14,8 +15,12 @@
 #logoA>a{
   text-decoration: none;
   font-family: "Agency FB";
-  font-size: 22px;
+  font-size: 30px;
+  font-weight: bold;
   color: #007ac7;
+}
+#logoA>a:hover{
+  color: #3886c9;
 }
 .headerWithBorder {
       border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -251,8 +256,8 @@ box-shadow: 0px 0px 20px #808080;
        background-color: #7239d6;
   }
   .navbar-inverse{
-    background-color: rgba(102,15,207,0.9);
-    border-bottom: 1px solid #8728e2;
+    background-color: rgb(67, 190, 127);
+    border-bottom: 1px solid #2cab71;
   }
   .scrollFadeOut{
     background-color: rgba(96, 33, 206, 0.7);
@@ -264,31 +269,31 @@ box-shadow: 0px 0px 20px #808080;
     height: 70px;
     width: 70px;
     padding: 10px;
-    background-color: #660fcf;
-    border: 1px solid #660fcf;
+    background-color: #43be7f;
+    border: 1px solid #43be7f;
   }
   .navbar-toggle:hover{
-    background-color: #660fcf;
-    border: 1px solid #660fcf;
+    background-color: #43be7f;
+    border: 1px solid #43be7f;
   }
   .navbar-toggle:active{
-    background-color: #660fcf;
-    border: 1px solid #660fcf;
+    background-color: #43be7f;
+    border: 1px solid #43be7f;
   }
   .navbar-toggle:visited{
-    background-color: #660fcf;
-    border: 1px solid #660fcf;
+    background-color: #43be7f;
+    border: 1px solid #43be7f;
   }
   .navbar-toggle:focus{
-    background-color: #660fcf;
-    border: 1px solid #660fcf;
+    background-color: #43be7f;
+    border: 1px solid #43be7f;
   }
   .navbar-toggle>span{
     color: white;
     font-size: 35px;
   }
   .navbar-toggle>span:hover{
-    color:#7fc5b1;
+    color:#2a7d53;
   }
 }
 /* The progress container (grey background) */
