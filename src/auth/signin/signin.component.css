@@ -42,8 +42,9 @@
   border-top-right-radius: 0;
 }
 .sign-in-image{
-  padding: 150px;
-  height: 100vh;
+  padding: 80px;
+  min-height: 100vh;
+  height: auto;
   display: block;
   width: 100%;
   text-align: center;

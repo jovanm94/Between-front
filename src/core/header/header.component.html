@@ -1,39 +1,27 @@
-<!--
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" [ngClass]="{'scrollFadeOut': isScrolling}">
-  <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-12 headerWithBorder">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="fa fa-plus"></span>
-      </button>
-      <div class="col-md-2">
-        <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="#myNavbar">
-        <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
-
-      </ul>
-    </div>
-    </div>
-  </div>
-  </div>
-</nav> -->
-
 <nav class="navbar navbar-inverse navbar-fixed-top" [ngClass]="{'scrollFadeOut': isScrolling}">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="fa fa-bars"></span>
       </button>
-      <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
+      <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>
     </div>
     <div class="collapse navbar-collapse headerWithBorder" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
         <li>
-          <a [routerLink]="['/']">Home</a>
+          <a [routerLink]="['/dashboard']">Dashboard</a>
         </li>
         <li>
-          <a [routerLink]="['/dashboard']">Dashboard</a>
+          <a (click)="emitClickEvent('about')">About Us</a>
+        </li>
+        <li>
+          <a (click)="emitClickEvent('protocol')">Protocol</a>
+        </li>
+        <li>
+          <a (click)="emitClickEvent('services')">Services</a>
+        </li>
+        <li>
+          <a (click)="emitClickEvent('team')">Team</a>
         </li>
         <li>
           <a (click)="emitClickEvent('contact')">Contact</a>

@@ -11,6 +11,15 @@
   padding-top: 15px;
   color: #354052;
 }
+.buttonsGR{
+  background-color: #efefef;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+h5{
+  text-align: center;
+margin-top: 10px;
+}
 .generateReports>i{
   font-size: 18px;
   padding-left: 35px;
@@ -49,6 +58,7 @@ button{
   background-color: #0277c2;
   border: 1px solid #ffffff;
   color: white;
+  width: 100%;
 }
 button:hover{
   background-color: #0b6aa7;
@@ -58,5 +68,6 @@ input{
   padding: 15px;
   background-color: white;
   border: 1px solid #0b6aa7;
-  color: white;
+  color: #0277c2;
+  width: 100%;
 }

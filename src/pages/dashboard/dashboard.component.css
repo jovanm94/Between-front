@@ -70,7 +70,8 @@
 }
 
 .dashboard-editor {
-      height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding: 0 10px;
   -webkit-order: 0;
   -ms-flex-order: 0;

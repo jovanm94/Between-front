@@ -1,9 +1,20 @@
 .scrollFadeOutLinks>li>a{
   color: #303742;
 }
+.nav>li>a{
+  cursor: pointer;
+}
+.scrollFadeOutLinks>li>a:hover{
+
+}
 .logoImage {
   height: 100%;
   padding-top: 10px;
+}
+#logoName{
+  font-family: "Agency FB";
+  font-size: 22px;
+  color: #007ac7;
 }
 li>a{
   color: white;
