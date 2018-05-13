@@ -1,7 +1,63 @@
-<div class="draftInvoicesPage">
-  <div class="row draftInvoices">
-    <p>
-    DRAFT INVOICES
-  </p>
-  </div>
+<div class="receivedInvoices">
+    <h4>
+    RECEIVED INVOICES
+  </h4>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myToolbar">
+          <span class="fa fa-bars"></span>&nbsp;<strong>OPTIONS</strong>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myToolbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a [routerLink]="['/']"><span class="fa fa-refresh"></span>&nbsp;Sync</a>
+          </li>
+          <li>
+            <a [routerLink]="['/dashboard']"><span class="fa fa-folder"></span>&nbsp;Invoice Import</a>
+          </li>
+          <li>
+            <a [routerLink]="['/']"><span class="fa fa-plus"></span>&nbsp;Create Invoice</a>
+          </li>
+          <li>
+            <a [routerLink]="['/login']"><span class="fa fa-search"></span>&nbsp;Advanced Search</a>
+          </li>
+          <li>
+            <a [routerLink]="['/register']"><span class="fa fa-search"></span>&nbsp;Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <p-table [value]="cake">
+      <ng-template pTemplate="header">
+          <tr>
+              <th>Invoice Number</th>
+              <th>From</th>
+              <th>Issuance Date</th>
+              <th>Payment Date</th>
+              <th>Amount</th>
+              <th>Verification Status</th>
+              <!-- <th>Brand</th>
+              <th>Color</th> -->
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-car>
+          <tr>
+              <td>{{car.id}}</td>
+              <td>{{car.type}}</td>
+              <td>{{car.id}}</td>
+              <td>{{car.type}}</td>
+              <td>{{car.id}}</td>
+              <td>{{car.type}}</td>
+              <!-- <td>{{car.brand}}</td>
+              <td>{{car.color}}</td> -->
+          </tr>
+      </ng-template>
+  </p-table>
 </div>

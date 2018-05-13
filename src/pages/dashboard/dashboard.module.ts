@@ -10,6 +10,10 @@ import { DraftInvoicesComponent } from './invoices/draft-invoices/draft-invoices
 import { VerifiedInvoicesComponent } from './invoices/verified-invoices/verified-invoices.component';
 import { AccordionModule } from 'primeng/components/accordion/accordion';
 import { ToolbarModule } from 'primeng/components/toolbar/toolbar';
+import {TableModule} from 'primeng/components/table/table';
+import { RequestInvoiceFinancingComponent } from './request-invoice-financing/request-invoice-financing.component';
+import { GenerateReportsComponent } from './generate-reports/generate-reports.component';
+import { CounterpartiesComponent } from './counterparties/counterparties.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,10 @@ import { ToolbarModule } from 'primeng/components/toolbar/toolbar';
     ReceivedInvoicesComponent,
     IssuedInvoicesComponent,
     DraftInvoicesComponent,
-    VerifiedInvoicesComponent
+    VerifiedInvoicesComponent,
+    RequestInvoiceFinancingComponent,
+    GenerateReportsComponent,
+    CounterpartiesComponent  
   ],
   imports: [
     CommonModule,
@@ -26,7 +33,8 @@ import { ToolbarModule } from 'primeng/components/toolbar/toolbar';
     ReactiveFormsModule,
     DashboardRoutingModule,
     AccordionModule,
-    ToolbarModule
+    ToolbarModule,
+    TableModule
   ]
 })
 export class DashboardModule {

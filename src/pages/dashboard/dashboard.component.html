@@ -17,26 +17,29 @@
 
       <p-accordionTab header="Invoice Verification">
         <div class="podMenu podMenuFirst">
-          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Received Invoices</a><br>
+          <a routerLink="./invoices/received" routerLinkActive="active-dashboard-menu-item">Received Invoices</a><br>
         </div>
         <div class="podMenu">
-          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Issued Invoices</a><br>
+          <a routerLink="./invoices/issued" routerLinkActive="active-dashboard-menu-item">Issued Invoices</a><br>
         </div>
         <div class="podMenu">
-          <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Draft Invoices</a>
+          <a routerLink="./invoices/draft" routerLinkActive="active-dashboard-menu-item">Draft Invoices</a>
+        </div>
+        <div class="podMenu">
+          <a routerLink="./invoices/verified" routerLinkActive="active-dashboard-menu-item">Verified Invoices</a>
         </div>
       </p-accordionTab>
 
       <div class="menuTab podMenuFirst">
-        <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Request Invoice Financing</a><br>
+        <a routerLink="./invoiceFinancing" routerLinkActive="active-dashboard-menu-item">Request Invoice Financing</a><br>
       </div>
 
       <div class="menuTab">
-        <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Generate Reports</a><br>
+        <a routerLink="./generateReports" routerLinkActive="active-dashboard-menu-item">Generate Reports</a><br>
       </div>
 
       <div class="menuTab">
-        <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Counterparties</a><br>
+        <a routerLink="./counterparties" routerLinkActive="active-dashboard-menu-item">Counterparties</a><br>
       </div>
 
     </p-accordion>

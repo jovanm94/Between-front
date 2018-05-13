@@ -1,9 +1,12 @@
+.scrollFadeOutLinks>li>a{
+  color: #303742;
+}
 .logoImage {
   height: 100%;
   padding-top: 10px;
 }
 li>a{
-  color: #ffffff;
+  color: white;
 }
 .headerWithBorder{
       border-bottom: 1px solid #ffffff4d;
@@ -148,6 +151,9 @@ li>a{
 @media (max-width: 992px) {}
 
 @media (max-width: 768px) {
+  .scrollFadeOutLinks>li>a{
+    color: white;
+  }
   .nav.navbar-nav {
     background: #14252F;
     display: block;
@@ -200,12 +206,6 @@ li>a{
     border-bottom-right-radius: 0;
   }
 }
-
-@media (max-width: 768px) {
-  .dropdown.open {
-    border-top: 1px solid #fff!important;
-   }
-}
 .scrollFadeOut {
 background-color:rgba(239, 239, 239, 0.9);
 box-shadow: 0px 0px 20px #808080;
@@ -213,7 +213,72 @@ box-shadow: 0px 0px 20px #808080;
   -ms-transition: background-color 650ms linear;
   transition: background-color 650ms linear;
 }
-.scrollFadeOutLinks>li>a{
-     color: grey!important;
+.scrollFadeOut>li>a{
      font-weight: bold;
+}
+.navbar-header img{
+  margin: 0 0 0 0;
+}
+
+
+
+//media queries
+@media (max-width: 768px) {
+  .dropdown.open {
+    border-top: 1px solid #fff!important;
+   }
+}
+@media (max-width: 844px) {
+  .nav>li{
+    background-color: rgba(1,1,1,0)!important;
+  }
+  .nav>a{
+    background-color: rgba(1,1,1,0)!important;
+  }
+  .nav{
+    background-color: rgba(1,1,1,0)!important;
+  }
+  .nav>li>a:hover{
+       background-color: #7239d6;
+  }
+  .navbar-inverse{
+    background-color: rgba(102,15,207,0.9);
+    border-bottom: 1px solid #8728e2;
+  }
+  .scrollFadeOut{
+    background-color: rgba(96, 33, 206, 0.7);
+  }
+  #myNavbar>li>a:hover{
+       background-color: #7239d6;
+  }
+  .navbar-toggle{
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    background-color: #660fcf;
+    border: 1px solid #660fcf;
+  }
+  .navbar-toggle:hover{
+    background-color: #660fcf;
+    border: 1px solid #660fcf;
+  }
+  .navbar-toggle:active{
+    background-color: #660fcf;
+    border: 1px solid #660fcf;
+  }
+  .navbar-toggle:visited{
+    background-color: #660fcf;
+    border: 1px solid #660fcf;
+  }
+  .navbar-toggle:focus{
+    background-color: #660fcf;
+    border: 1px solid #660fcf;
+  }
+  .navbar-toggle>span{
+    color: white;
+    font-size: 35px;
+  }
+  .navbar-toggle>span:hover{
+    color:#7fc5b1;
+  }
 }

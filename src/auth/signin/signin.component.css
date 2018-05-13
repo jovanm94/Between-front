@@ -53,3 +53,9 @@
   background-size: cover;
   -o-background-size: cover;
 }
+img:hover{
+  box-shadow: 2px 1px 46px #ffffff61;
+  -webkit-transition: box-shadow 500ms linear;
+  -ms-transition:box-shadow 500ms linear;
+  transition:box-shadow 500ms linear;
+}

@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerifiedInvoicesComponent implements OnInit {
 
-  constructor() { }
+    cake: Cake[] = [
+  								{ "id": "AS", "type": "None" },
+  								{ "id": "BG", "type": "Glazed" },
+  								{ "id": "RF", "type": "Sugar" },
+  								{ "id": "GR", "type": "Powdered Sugar" },
+  								{ "id": "HG", "type": "Chocolate with Sprinkles" },
+  								{ "id": "XV", "type": "Chocolate" },
+  								{ "id": "RT", "type": "Maple" }
+  							];
 
-  ngOnInit() {
+    constructor() { }
+
+    ngOnInit() {
+    }
+
   }
-
-}
+  export interface Cake {
+      id;
+      type;
+    }

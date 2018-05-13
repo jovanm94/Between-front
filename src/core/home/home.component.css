@@ -318,6 +318,22 @@ background-color: white;
   padding: 30px;
   text-align: left;
 }
+.servicesImg{
+  padding: 30px;
+}
+@media screen and (max-width: 425px) {
+  .servicesText{
+    padding: 0px;
+  }
+  .servicesImg{
+    padding-left: 35px;
+  }
+  .paddingLeftCircle{
+    padding-left: 30%;
+  }
+}
+
+
 @media screen and (max-width: 992px) {
   .roundPanel{
     height: 120px;

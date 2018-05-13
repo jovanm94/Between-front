@@ -47,9 +47,16 @@
   display: block;
   width: 100%;
   text-align: center;
-  background: linear-gradient(to bottom right, #83f5a9, #6d00d0, #29adc7);  
+  background: linear-gradient(to bottom right, #83f5a9, #6d00d0, #29adc7);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+img:hover{
+  box-shadow: 2px 1px 46px #ffffff61;
+  -webkit-transition: box-shadow 500ms linear;
+  -ms-transition:box-shadow 500ms linear;
+  transition:box-shadow 500ms linear;
 }

@@ -1,17 +1,17 @@
-.receivedInvoices{
+.requestInvoiceFinancing{
   background:white;
   height: 100px;
   margin-left: -8px;
   margin-right: -40px;
 }
-.receivedInvoices>h4{
+.requestInvoiceFinancing>h4{
   font-weight: bold;
   font-size: 20px;
   padding-left: 35px;
   padding-top: 15px;
   color: #354052;
 }
-.receivedInvoices>i{
+.requestInvoiceFinancing>i{
   font-size: 18px;
   padding-left: 35px;
   color: #354052;
@@ -42,4 +42,22 @@ margin-right: -16px;
 }
 .nav>li>a:hover{
   color: #354052;
+}
+#anotherColor{
+      background-color: #83f5a9;
+}
+#anotherColorTd{
+  background-color: #fffefe;
+}
+#submitRequestBtn{
+  float: right;
+  padding: 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #0277c2;
+  border: 1px solid #ffffff;
+  color: white;
+}
+#submitRequestBtn:hover{
+  background-color: #0b6aa7;
 }

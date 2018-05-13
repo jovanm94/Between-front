@@ -125,3 +125,12 @@ background: white;
   width: 100%;
   background: linear-gradient(#122440, #c4e2c4);
 }
+@media (max-width: 768px) {
+  .dashboard-editor{
+    padding: 0;
+  }
+  .dashboard-wrapper{
+    margin: 0 0 0 0!important;
+    padding: 0 0 0 0!important;
+  }
+}

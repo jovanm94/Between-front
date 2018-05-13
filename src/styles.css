@@ -89,6 +89,9 @@ footer {
   .featurette-heading {
     font-size: 35px;
   }
+  .ui-toolbar-group-left>button{
+      width: 145px!important;
+  }
 }
 
 @media(max-width:991px) {
@@ -111,6 +114,13 @@ footer {
 
   .featurette-heading {
     font-size: 30px;
+  }
+  .navbar-collapse{
+    position: relative;
+    z-index: 1000;
+  }
+  .navbar-toggle{
+    padding: 0;
   }
 }
 
@@ -142,7 +152,21 @@ footer {
   }
 }
 
-@media(max-width:640px) {
+@media (max-width: 425px) {
+  .headline{
+    padding-top: 100px;
+  }
+  .headline h1 {
+    font-size: 30px;
+  }
+  .headline h2 {
+    font-size: 20px;
+  }
+.headline h4 {
+  font-size: 16px;
+  }
+}
+@media(max-width:640px) and (min-width:426px){
   .headline {
     padding: 75px 0 25px 0;
   }
@@ -181,7 +205,7 @@ footer {
 footer{
   color: #efefef!important;
   background-color: #303742;
-  height: 100px;
+  height: 170px;
   margin: 0 0 0 0!important;
   width:100%!important;
   padding: 25px;
@@ -233,6 +257,82 @@ font-size: 35px;
   color: white;
   border-bottom: 1px solid white;
 }
+.menuTab:hover{
+  background-color: #2d3542;
+}
+.podMenu:hover{
+  background-color: #2d3542;
+}
+.ui-accordion-header:hover{
+    background-color: #2d3542;
+}
+.menuTab>a:hover{
+  color: #86d6a0;
+  text-decoration: none;
+}
+.ui-accordion-header>a:hover{
+  color: #86d6a0;
+  text-decoration: none;
+}
+.ui-accordion-header>a:visited{
+  color: #86d6a0;
+  text-decoration: none;
+}
+.ui-accordion-header>a:focus{
+  color: #86d6a0;
+  text-decoration: none;
+}
+.podMenu>a:hover{
+  color: #86d6a0;
+  text-decoration: none;
+}
 .menuTab>a{
   color: white;
+}
+.ui-toolbar{
+  background: #efefef;
+  height: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.ui-toolbar-group-left>button{
+  background-color: #86d6a0;
+    border: 1px solid white;
+    height: 41px;
+    margin-left: -9px;
+    width: 180px;
+    margin-top: -4px;
+}
+.ui-toolbar-group-left>button:hover{
+  background-color: #83f5a9;
+}
+.ui-toolbar-group-right>button{
+  background-color: #86d6a0;
+    border: 1px solid white;
+    height: 41px;
+    margin-left: -9px;
+    width: 180px;
+    margin-top: -4px;
+}
+.ui-toolbar-group-right>button:hover{
+  background-color: #83f5a9;
+}
+.ui-table-thead>tr>th{
+  border-left: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  background-color: #efefef;
+  border-bottom: 1px solid white;
+  height: 50px!important;
+  text-align: center;
+}
+.ui-table-tbody{
+  background: white;
+}
+.ui-table-tbody>tr>td{
+  border-left: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  background: white;
+  height: 40px;
+}
+.ui-accordion .ui-accordion-content{
+  background-color: #354052;
 }
