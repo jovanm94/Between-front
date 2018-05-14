@@ -10,10 +10,12 @@ import { Subscription } from 'rxjs/Subscription';
 export class HomeComponent implements OnInit, OnDestroy {
 
   @ViewChild('contact') contact: ElementRef;
-  @ViewChild('technology') technology: ElementRef;
+  @ViewChild('protocol') protocol: ElementRef;
   @ViewChild('team') team: ElementRef;
   @ViewChild('aboutus') aboutus: ElementRef;
   @ViewChild('learnmore') learnmore: ElementRef;
+  @ViewChild('title') title: ElementRef;
+  @ViewChild('project') project: ElementRef;
 
   eventSubscription: Subscription;
   constructor(private eventsService: EventsService) {
@@ -24,9 +26,9 @@ export class HomeComponent implements OnInit, OnDestroy {
             this.contact.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           break;
-        case 'technology':
-          if (this.technology && this.technology.nativeElement) {
-            this.technology.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        case 'protocol':
+          if (this.protocol && this.protocol.nativeElement) {
+            this.protocol.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           break;
         case 'team':
@@ -44,8 +46,41 @@ export class HomeComponent implements OnInit, OnDestroy {
             this.learnmore.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           break;
+        case 'title':
+          if (this.title && this.title.nativeElement) {
+            this.title.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          }
+          break;
+        case 'project':
+          if (this.project && this.project.nativeElement) {
+            this.project.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          }
+          break;
       }
     });
+  }
+
+  scrollToAboutUs() {
+    if (this.aboutus && this.aboutus.nativeElement) {
+      this.aboutus.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  onNavigate(person: string) {
+    switch (person) {
+      case 'miljan':
+        window.open('https://www.linkedin.com/in/miljan-gudelj-777b598a/', '_blank');
+        break;
+      case 'matija':
+        window.open('https://www.linkedin.com/in/matija-maskovic-11654ba4/', '_blank');
+        break;
+      case 'jovan':
+        window.open('https://www.linkedin.com/in/jovanmilovanovic01/', '_blank');
+        break;
+      case 'mladen':
+        window.open('https://www.linkedin.com/in/mladen-tu%C5%A1up/', '_blank');
+        break;
+    }
   }
 
   ngOnInit() {

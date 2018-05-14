@@ -1,6 +1,6 @@
 <div class="receivedInvoices">
     <h4>
-    RECEIVED INVOICES
+    Received Invoices
   </h4>
 
   <nav class="navbar">
@@ -42,26 +42,27 @@
           </tr>
       </ng-template>
       <ng-template pTemplate="body" let-invoice>
-          <tr>
+          <tr [pSelectableRow]="invoice">
               <td>{{invoice.number}}</td>
               <td>{{invoice.from}}</td>
               <td>{{invoice.issuanceDate}}</td>
               <td>{{invoice.paymentDate}}</td>
               <td>{{invoice.paymentAmount}}</td>
-              <td>{{invoice.status}}</td>
-              <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
-              <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
-              <td>{{car.id}}</td>
               <td>
-                <p id="badgeRed">Verified</p>
+                <p id="badgeGrey">{{invoice.status}}</p>
               </td>
               <td id="verifyDecline">
-                <span id="verify" class="fa fa-check">&nbsp;Verify</span>&nbsp;&nbsp;&nbsp;
-                <span id="decline" class="fa fa-ban">&nbsp;Decline</span>
+                <button class="btn btn-success" type="text" (click)="confirm()" pButton icon="fa fa-check" label="Verify"></button>
+                <button class="btn btn-danger" type="text" pButton icon="fa fa-ban" label="Decline"></button>
               </td>
           </tr>
       </ng-template>
   </p-table>
 </div>
+
+<p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425" closeOnEscape="false" #cd>
+  <p-footer>
+    <button type="button" class="btn btn-danger" pButton icon="fa-close" label="No" (click)="cd.reject()"></button>
+    <button type="button" class="btn btn-success" pButton icon="fa-check" label="Yes" (click)="cd.accept()"></button>
+  </p-footer>
+</p-confirmDialog>

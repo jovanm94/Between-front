@@ -16,6 +16,7 @@ import { RequestAndResponseInterceptorService } from '../services/RequestAndResp
 import { PageNotFoundComponent } from '../pages/page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GlobalsService } from '../services/globals';
+import {ConfirmationService} from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { GlobalsService } from '../services/globals';
     NotificationsService,
     EventsService,
     LoaderAndModalService,
+    ConfirmationService,
     GlobalsService,
     {
       provide: HTTP_INTERCEPTORS,

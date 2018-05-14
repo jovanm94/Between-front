@@ -1,6 +1,6 @@
 <div class="receivedInvoices">
     <h4>
-    RECEIVED INVOICES
+    Draft Invoices
   </h4>
 
   <nav class="navbar">
@@ -29,38 +29,27 @@
     </div>
   </nav>
 
-
-
-  <p-table [value]="cake">
+  <p-table [value]="invoices">
       <ng-template pTemplate="header">
           <tr>
               <th>Invoice Number</th>
-              <th>From</th>
+              <th>To</th>
               <th>Issuance Date</th>
               <th>Payment Date</th>
               <th>Amount</th>
-              <th>Verification Status</th>
               <th>Action</th>
-              <!-- <th>Brand</th>
-              <th>Color</th> -->
           </tr>
       </ng-template>
-      <ng-template pTemplate="body" let-car>
+      <ng-template pTemplate="body" let-invoice>
           <tr>
-              <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
-              <td>{{car.id}}</td>
-              <td>{{car.type}}</td>
-              <td>{{car.id}}</td>
-              <td>
-                <p id="badgeGrey">Verified</p>
-              </td>
-              <td id="verifyDecline">
-                <span id="verify" class="fa fa-check">&nbsp;Verify</span>&nbsp;&nbsp;&nbsp;
-                <span id="decline" class="fa fa-ban">&nbsp;Decline</span>
-              </td>
-              <!-- <td>{{car.brand}}</td>
-              <td>{{car.color}}</td> -->
+            <td>{{invoice.number}}</td>
+            <td>{{invoice.to}}</td>
+            <td>{{invoice.issuanceDate}}</td>
+            <td>{{invoice.paymentDate}}</td>
+            <td>{{invoice.paymentAmount}}</td>
+            <td id="verifyDecline">
+              <span id="verify" class="fa fa-check">&nbsp;Activate</span>&nbsp;&nbsp;&nbsp;
+            </td>
           </tr>
       </ng-template>
   </p-table>

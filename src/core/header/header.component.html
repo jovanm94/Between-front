@@ -4,18 +4,19 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="fa fa-bars"></span>
       </button>
-      <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>
+        <a id="logoA" (click)="emitClickEvent('title')"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>
+      <!--<a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>-->
     </div>
     <div class="collapse navbar-collapse headerWithBorder" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
         <li>
-          <a [routerLink]="['/dashboard']">Dashboard</a>
-        </li>
-        <li>
           <a (click)="emitClickEvent('aboutus')">About Us</a>
         </li>
         <li>
-          <a (click)="emitClickEvent('technology')">Technology</a>
+          <a (click)="emitClickEvent('project')">Project</a>
+        </li>
+        <li>
+          <a (click)="emitClickEvent('protocol')">Protocol</a>
         </li>
         <li>
           <a (click)="emitClickEvent('team')">Team</a>
@@ -23,11 +24,14 @@
         <li>
           <a (click)="emitClickEvent('contact')">Contact</a>
         </li>
-        <li>
-          <a [routerLink]="['/login']">Login</a>
+        <li *ngIf="authService.isAuthenticated()">
+          <a routerLink="/dashboard/home">Dashboard</a>
         </li>
-        <li>
-          <a [routerLink]="['/register']">Register</a>
+        <li *ngIf="!authService.isAuthenticated()">
+          <a [routerLink]="['/login']" >Login</a>
+        </li>
+        <li *ngIf="!authService.isAuthenticated()">
+          <a [routerLink]="['/register']" >Register</a>
         </li>
       </ul>
     </div>

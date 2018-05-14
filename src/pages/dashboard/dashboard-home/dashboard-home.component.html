@@ -1,11 +1,18 @@
 <div class="dashBoardHomePage">
 
   <!-- firstsection -->
-  <div class="dashboardFirst">
+  <div class="dashboardFirst" *ngIf="email == 'matija.maskovic@between.network'">
     <h4>
-      Company ABC Ltd. Belgrade
+      SCF Solutions, Belgrade
     </h4>
-    <i>Serbia Belgrade (New Belgrade), Street Address 123, 888 (BIN - Business Identification Number)</i>
+    <i>Serbia Belgrade, Tetovska 6, 777 (BIN - Business Identification Number)</i>
+  </div>
+
+  <div class="dashboardFirst" *ngIf="email == 'miljan.gudelj@between.network'">
+    <h4>
+      Ambex d.o.o, Belgrade
+    </h4>
+    <i>Serbia Belgrade (New Belgrade), Vladimira Popovića 50, 257 (BIN - Business Identification Number)</i>
   </div>
 
   <!-- second -->
@@ -14,17 +21,28 @@
       <h4>
         About Company:
       </h4>
-      <p>Company ABC has been established in 2014, with headquarter office in Belgrade. Company operates in consumer goods industry.
+      <p *ngIf="email =='matija.maskovic@between.network'">Company SCF Solutions has been established in 2012, with headquarter office in Belgrade.
+        Company operates in computer science consulting industry.
+      </p>
+      <p *ngIf="email =='miljan.gudelj@between.network'">Company Ambex has been established in 2014, with headquarter office in Belgrade. Company operates in consumer goods industry.
       </p>
     </div>
 
-      <div class="col-md-4 dashboardSeconditem">
+      <div class="col-md-4 dashboardSeconditem" *ngIf="email =='matija.maskovic@between.network'">
         <h4>
-          Sector: Consumer goods
+          Sector: Software consulting
         </h4>
-        <p>Industry: 4690 (Industry ID number) Consumer goods
+        <p>Industry: 2490 (Industry ID number) Software consulting
         </p>
       </div>
+
+    <div class="col-md-4 dashboardSeconditem" *ngIf="email =='miljan.gudelj@between.network'">
+      <h4>
+        Sector: Consumer goods
+      </h4>
+      <p>Industry: 4690 (Industry ID number) Consumer goods
+      </p>
+    </div>
 
       <div class="col-md-4 dashboardSeconditem">
         <h4>Company Structure:

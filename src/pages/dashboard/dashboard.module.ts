@@ -10,10 +10,14 @@ import { DraftInvoicesComponent } from './invoices/draft-invoices/draft-invoices
 import { VerifiedInvoicesComponent } from './invoices/verified-invoices/verified-invoices.component';
 import { AccordionModule } from 'primeng/components/accordion/accordion';
 import { ToolbarModule } from 'primeng/components/toolbar/toolbar';
-import {TableModule} from 'primeng/components/table/table';
+import { TableModule } from 'primeng/components/table/table';
 import { RequestInvoiceFinancingComponent } from './request-invoice-financing/request-invoice-financing.component';
 import { GenerateReportsComponent } from './generate-reports/generate-reports.component';
 import { CounterpartiesComponent } from './counterparties/counterparties.component';
+import { ConfirmDialogModule } from 'primeng/components/confirmdialog/confirmdialog';
+// import { ConfirmationService } from 'primeng/api';
+import { ButtonModule } from 'primeng/components/button/button';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +29,7 @@ import { CounterpartiesComponent } from './counterparties/counterparties.compone
     VerifiedInvoicesComponent,
     RequestInvoiceFinancingComponent,
     GenerateReportsComponent,
-    CounterpartiesComponent  
+    CounterpartiesComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +38,10 @@ import { CounterpartiesComponent } from './counterparties/counterparties.compone
     DashboardRoutingModule,
     AccordionModule,
     ToolbarModule,
-    TableModule
+    TableModule,
+    ConfirmDialogModule,
+    // ConfirmationService,
+    ButtonModule
   ]
 })
 export class DashboardModule {

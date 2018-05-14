@@ -13,6 +13,7 @@
 #arrowGif{
   width: 80px;
   padding-top: 100px;
+  cursor: pointer;
 }
 @media (min-width: 640px) {
   #arrowGif{
@@ -195,9 +196,7 @@
 }
 
 .paddingLeftCircle{
-padding-left: 4%;
-padding-top: 4%;
-padding-bottom: 4%;
+padding-top: 5%;
 }
 #about{
   width: 100%;
@@ -248,18 +247,17 @@ background-color: #efefef;
   margin-right: 0;
   width: 100%;
   padding-top: 50px;
-  text-align: center;
   display: block;
   padding-bottom: 120px;
 }
+.issuesAndSolutionsItem>h4{
+  color:#83f6aa;
+  text-align: center;
+}
 #issuesAndSolutions{
+  font-size: 14px;
+
   text-align: justify;
-}
-#issuesAndSolutions>h4{
-  font-size: 24px;
-}
-#issuesAndSolutions>p{
-  font-size: 20px;
 }
 #team{
   width: 100%;
@@ -290,6 +288,7 @@ background-color: #efefef;
 }
 .h2Hero{
   margin-bottom: 80px;
+  text-align: center;
 }
 .roundPanel{
   text-align: center;
@@ -304,10 +303,6 @@ background-color: #efefef;
   -webkit-transition: all 500ms ease-in-out;
   -ms-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
-}
-.imgEcoSystem{
-  height: 85%!important;
-  width: 85%!important;
 }
 .roundPanel>span{
   font-size: 80px;
@@ -372,6 +367,10 @@ background-color: #efefef;
   .paddingLeftCircle{
     padding-left: 30%;
   }
+  .companyImg{
+    height: 100%!important;
+    width: 100%!important;
+  }
 }
 
 
@@ -383,5 +382,13 @@ background-color: #efefef;
   }
   .roundPanel>span{
     font-size: 50px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .imgEcoSystem{
+    height: 85%!important;
+    width: 85%!important;
+
+    padding-left: 15%;
   }
 }

@@ -13,8 +13,16 @@ export interface CanComponentDeactivate {
 export class AuthGuard implements CanActivate, CanDeactivate<CanComponentDeactivate>, CanLoad {
 
   constructor(private authService: AuthService, private appService: AppService) {}
-  // constructor() {}
+
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+    if (state.url == '/login' || state.url == '/register') {
+      if (!this.authService.isAuthenticated()) {
+        return true;
+      } else {
+        this.appService.redirectTo('');
+        return false;
+      }
+    }
     // if (state.url == '/registracija' || state.url == '/prijava') {
     //   if (!this.authService.isAuthenticated()) {
     //     return true;
@@ -55,15 +63,13 @@ export class AuthGuard implements CanActivate, CanDeactivate<CanComponentDeactiv
     // //     return true;
     // //   }
     // // }
-    // if (this.authService.isAuthenticated()) {
-    //   return true;
-    // } else {
-    //   this.appService.redirectTo('prijava');
-    //   this.appService.setRedirectToRoute(route.path);
-    //   return false;
-    // }
+    if (this.authService.isAuthenticated()) {
+      return true;
+    } else {
+      this.appService.redirectTo('login');
+      // this.appService.setRedirectToRoute(route.path);
+      return false;
+    }
     // return false;
-    return true;
   }
-
 }

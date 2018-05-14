@@ -73,6 +73,14 @@ export class AuthService {
   //   }
   //   return this.token != null;
   // }
+
+  isAuthenticated() {
+      return localStorage.getItem('loggedIn');
+  }
+
+  logout() {
+    localStorage.clear();
+  }
   //
   // logout() {
   //   window.localStorage.clear();

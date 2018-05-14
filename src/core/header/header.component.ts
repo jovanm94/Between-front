@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { EventsService } from '../../services/events.service';
+import {AuthService} from '../../auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnChanges {
   @Input() isScrolling = false;
   @Input() scrolledPercent = 0;
 
-  constructor(private eventsService: EventsService) {}
+  constructor(private eventsService: EventsService, public authService: AuthService) {}
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.isScrolling && changes.isScrolling.currentValue) {

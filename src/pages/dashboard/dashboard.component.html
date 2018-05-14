@@ -1,7 +1,10 @@
 <div class="row">
-  <div class="headingPanelDashboard">
-    <div class="col-md-2">
+  <div class="headingPanelDashboard container-fluid">
+    <div class="col-xs-6 col-md-2">
       <a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
+    </div>
+    <div class="text-right col-xs-6 logoutBtn">
+      <button (click)="logout()"><p>Logout</p></button>
     </div>
   </div>
 </div>
@@ -9,36 +12,36 @@
 <div class="dashboard-wrapper container-fluid">
   <div class="flex">
 
-    <p-accordion class="accordionDivStyle">
-      <div class="menuTab">
+    <p-accordion class="accordionDivStyle" (onOpen)="goToReceived()">
+      <div class="menuTab" [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/home'}">
         <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Dashboard</a><br>
       </div>
 
 
       <p-accordionTab header="Invoice Verification">
-        <div class="podMenu podMenuFirst">
+        <div class="podMenu podMenuFirst" [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/invoices/received'}">
           <a routerLink="./invoices/received" routerLinkActive="active-dashboard-menu-item">Received Invoices</a><br>
         </div>
-        <div class="podMenu">
+        <div class="podMenu" [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/invoices/issued'}">
           <a routerLink="./invoices/issued" routerLinkActive="active-dashboard-menu-item">Issued Invoices</a><br>
         </div>
-        <div class="podMenu">
+        <div class="podMenu" [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/invoices/draft'}">
           <a routerLink="./invoices/draft" routerLinkActive="active-dashboard-menu-item">Draft Invoices</a>
         </div>
-        <div class="podMenu">
+        <div class="podMenu" [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/invoices/verified'}">
           <a routerLink="./invoices/verified" routerLinkActive="active-dashboard-menu-item">Verified Invoices</a>
         </div>
       </p-accordionTab>
 
-      <div class="menuTab podMenuFirst">
-        <a routerLink="./invoiceFinancing" routerLinkActive="active-dashboard-menu-item">Request Invoice Financing</a><br>
+      <div class="menuTab podMenuFirst" [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/invoiceFinancing'}">
+        <a routerLink="./invoiceFinancing" routerLinkActive="active-dashboard-menu-item">Invoice Financing</a><br>
       </div>
 
-      <div class="menuTab">
+      <div class="menuTab"  [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/generateReports'}">
         <a routerLink="./generateReports" routerLinkActive="active-dashboard-menu-item">Generate Reports</a><br>
       </div>
 
-      <div class="menuTab">
+      <div class="menuTab"  [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/counterparties'}">
         <a routerLink="./counterparties" routerLinkActive="active-dashboard-menu-item">Counterparties</a><br>
       </div>
 

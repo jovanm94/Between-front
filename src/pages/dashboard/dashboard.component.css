@@ -140,5 +140,35 @@ a:focus, a:hover {
     text-decoration: none;
 }
 .activeTabDashboard{
-  background-color: #525e71;
+  background-color: #8593a9;
+  font-size: 15px;
+}
+.logoutBtn{
+  height: 40px;
+  background-color: #8492a9;
+  border: 1px solid rgba(1,1,1,0);
+  border-radius: 7px;
+  color: #ffffff;
+  margin-top: 20px;
+  width: 90px;
+  float: right;
+  padding-top:5px;
+}
+.logoutBtn>button>p{
+  background-color: rgba(1,1,1,0);
+  border: 1px solid rgba(1,1,1,0);
+}
+.logoutBtn>button{
+  background-color: rgba(1,1,1,0);
+  border: 1px solid rgba(1,1,1,0);
+}
+.logoutBtn:visited{
+  height: 40px;
+  background-color: #8492a9;
+  border: 1px solid rgba(1,1,1,0);
+  border-radius: 7px;
+  color: #ffffff;
+  margin-top: 20px;
+  width: 90px;
+  float: right;
 }

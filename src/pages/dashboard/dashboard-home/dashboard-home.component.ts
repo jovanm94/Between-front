@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppService} from '../../../services/app-routing.service';
 
 @Component({
   selector: 'app-dashboard-home',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardHomeComponent implements OnInit {
 
-  constructor() { }
+  email = '';
+  currentRoute = '';
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.currentRoute = this.appService.getCurrentRoute();
+    console.log(this.currentRoute);
+    this.email = localStorage.getItem('email');
   }
 
 }

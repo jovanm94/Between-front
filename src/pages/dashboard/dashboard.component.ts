@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AppService} from '../../services/app-routing.service';
+import {AuthService} from '../../auth/auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService, private authService: AuthService) { }
 
   ngOnInit() {
+  }
+
+  goToReceived() {
+    this.appService.redirectTo('dashboard/invoices/received');
+  }
+
+  logout() {
+    this.authService.logout();
+    this.appService.redirectTo('/');
   }
 
 }
