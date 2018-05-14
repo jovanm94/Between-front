@@ -66,6 +66,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
+  scrollToProject() {
+    if (this.project && this.project.nativeElement) {
+      this.project.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   onNavigate(person: string) {
     switch (person) {
       case 'miljan':
