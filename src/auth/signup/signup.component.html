@@ -6,41 +6,42 @@
   <div class="row">
     <div class="col-sm-12">
       <label for="inputName" class="sr-only">Name</label>
-      <input type="name" id="inputName" class="form-control" placeholder="Name" required autofocus>
+      <input type="name" id="inputName" class="form-control" placeholder="Name" required disabled>
 
       <label for="inputSurname" class="sr-only">Surname</label>
-      <input type="surname" id="inputSurname" class="form-control" placeholder="Surname" required autofocus>
+      <input type="surname" id="inputSurname" class="form-control" placeholder="Surname" required disabled>
 
       <label for="inputAddress" class="sr-only">Address</label>
-      <input type="address" id="inputAddress" class="form-control" placeholder="Address" required autofocus>
+      <input type="address" id="inputAddress" class="form-control" placeholder="Address" required disabled>
 
       <label for="inputCity" class="sr-only">City</label>
-      <input type="city" id="inputCity" class="form-control" placeholder="City" required autofocus>
+      <input type="city" id="inputCity" class="form-control" placeholder="City" required disabled>
 
     </div>
     <div class="col-sm-12">
         <label for="inputCountry" class="sr-only">Country</label>
-        <input type="country" id="inputCountry" class="form-control" placeholder="Country" required autofocus>
+        <input type="country" id="inputCountry" class="form-control" placeholder="Country" required disabled>
 
         <label for="inputContact" class="sr-only">Contact Number</label>
-        <input type="contact" id="inputContact" class="form-control" placeholder="Contact Number" required autofocus>
+        <input type="contact" id="inputContact" class="form-control" placeholder="Contact Number" required disabled>
 
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required disabled>
 
         <label for="inputPasswordRepeat" class="sr-only">Repeat Password</label>
-        <input type="passwordRepeat" id="inputPasswordRepeat" class="form-control" placeholder="Repeat Password" required>
+        <input type="passwordRepeat" id="inputPasswordRepeat" class="form-control" placeholder="Repeat Password" required disabled>
 
     </div>
   </div>
   <div class="checkbox mb-3">
     <label>
-      <input type="checkbox" value="remember-me">Remember me
+      <input type="checkbox" value="remember-me" disabled>Remember me
     </label>
   </div>
   <div class="row">
     <div class="col-md-offset-3 col-md-6">
-      <button class="btn btn-lg btn-primary btn-block" (click)="register()">Register</button>
+      <button class="btn btn-lg btn-primary btn-block" (click)="register()" disabled>Register</button>
+      <p>We are currently updating our services. Registrations are temporarily unavailable. We Apologize for the inconvenience.</p>
     </div>
   </div>
 
