@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SignupComponent {
 
-
   constructor() {}
+
+  register() {}
 }
 

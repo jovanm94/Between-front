@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from '../auth/auth.module';
 import { HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
-import { UiModule } from '../ui/ui.module';
 import { CoreModule } from '../core/core.module';
 import { AppService } from '../services/app-routing.service';
 import { CallBroker } from '../services/CallBroker';
@@ -32,7 +31,6 @@ import {ConfirmationService} from 'primeng/api';
     FormsModule,
     HttpClientModule,
     CoreModule,
-    UiModule,
     // mainRoutingModule
     AppRoutingModule
   ],

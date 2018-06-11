@@ -7,31 +7,28 @@
         <a id="logoA" (click)="emitClickEvent('title')"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>
       <!--<a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>-->
     </div>
-    <div class="collapse navbar-collapse headerWithBorder" id="myNavbar">
+    <div class="collapse navbar-collapse headerWithBorder" id="myNavbar" #navbar>
       <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
         <li>
-          <a (click)="emitClickEvent('aboutus')">About Us</a>
+          <a (click)="emitClickEvent('solution'); onMenuClick()">Solution</a>
         </li>
         <li>
-          <a (click)="emitClickEvent('project')">Project</a>
+          <a (click)="emitClickEvent('platform'); onMenuClick()">Platform</a>
         </li>
         <li>
-          <a (click)="emitClickEvent('protocol')">Protocol</a>
+          <a (click)="emitClickEvent('aboutus'); onMenuClick()">About Us</a>
         </li>
         <li>
-          <a (click)="emitClickEvent('team')">Team</a>
-        </li>
-        <li>
-          <a (click)="emitClickEvent('contact')">Contact</a>
+          <a (click)="emitClickEvent('contact'); onMenuClick()">Contact</a>
         </li>
         <li *ngIf="authService.isAuthenticated()">
-          <a routerLink="/dashboard/home">Dashboard</a>
+          <a routerLink="/dashboard/home" (click)="onMenuClick()">Dashboard</a>
         </li>
         <li *ngIf="!authService.isAuthenticated()">
-          <a [routerLink]="['/login']" >Login</a>
+          <a [routerLink]="['/login']" (click)="onMenuClick()">Login</a>
         </li>
         <li *ngIf="!authService.isAuthenticated()">
-          <a [routerLink]="['/register']" >Register</a>
+          <a [routerLink]="['/register']" (click)="onMenuClick()">Register</a>
         </li>
       </ul>
     </div>

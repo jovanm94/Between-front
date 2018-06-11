@@ -10,12 +10,11 @@ import { Subscription } from 'rxjs/Subscription';
 export class HomeComponent implements OnInit, OnDestroy {
 
   @ViewChild('contact') contact: ElementRef;
-  @ViewChild('protocol') protocol: ElementRef;
-  @ViewChild('team') team: ElementRef;
+  @ViewChild('platform') platform: ElementRef;
   @ViewChild('aboutus') aboutus: ElementRef;
   @ViewChild('learnmore') learnmore: ElementRef;
   @ViewChild('title') title: ElementRef;
-  @ViewChild('project') project: ElementRef;
+  @ViewChild('solution') solution: ElementRef;
 
   eventSubscription: Subscription;
   constructor(private eventsService: EventsService) {
@@ -26,14 +25,9 @@ export class HomeComponent implements OnInit, OnDestroy {
             this.contact.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           break;
-        case 'protocol':
-          if (this.protocol && this.protocol.nativeElement) {
-            this.protocol.nativeElement.scrollIntoView({ behavior: 'smooth' });
-          }
-          break;
-        case 'team':
-          if (this.team && this.team.nativeElement) {
-            this.team.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        case 'platform':
+          if (this.platform && this.platform.nativeElement) {
+            this.platform.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           break;
         case 'aboutus':
@@ -51,9 +45,9 @@ export class HomeComponent implements OnInit, OnDestroy {
             this.title.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           break;
-        case 'project':
-          if (this.project && this.project.nativeElement) {
-            this.project.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        case 'solution':
+          if (this.solution && this.solution.nativeElement) {
+            this.solution.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           break;
       }
@@ -66,9 +60,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
-  scrollToProject() {
-    if (this.project && this.project.nativeElement) {
-      this.project.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  scrollToSolution() {
+    if (this.solution && this.solution.nativeElement) {
+      this.solution.nativeElement.scrollIntoView({ behavior: 'smooth' });
     }
   }
 

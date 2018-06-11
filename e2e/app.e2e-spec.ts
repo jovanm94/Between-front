@@ -1,10 +1,10 @@
-import { BetweenWebappPage } from './app.po';
+import { BetweenPage } from './app.po';
 
-describe('between-webapp App', () => {
-  let page: BetweenWebappPage;
+describe('between App', () => {
+  let page: BetweenPage;
 
   beforeEach(() => {
-    page = new BetweenWebappPage();
+    page = new BetweenPage();
   });
 
   it('should display message saying app works', () => {

@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class BetweenWebappPage {
+export class BetweenPage {
   navigateTo() {
     return browser.get('/');
   }

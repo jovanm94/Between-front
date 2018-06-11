@@ -18,13 +18,8 @@ export class SigninComponent implements OnInit {
   }
 
   login() {
-    if ((this.username != 'matija.maskovic@between.network' && this.password != 'password')
-      || (this.username != 'miljan.gudelj@between.network' && this.password != 'password')) {
-      setTimeout(() => {
-        this.errorMessage = 'Wrong username or password';
-        this.success = '';
-      }, 300);
-    } else {
+    if ((this.username == 'matija.maskovic@between.network' && this.password == 'matijapass777')
+      || (this.username == 'miljan.gudelj@between.network' && this.password == 'miljanpass777')) {
       this.errorMessage = '';
       this.success = 'Redirecting...';
       localStorage.setItem('loggedIn', 'true');
@@ -36,6 +31,11 @@ export class SigninComponent implements OnInit {
       setTimeout(() => {
         this.appService.redirectTo('/dashboard/home');
       }, 600);
+    } else {
+      setTimeout(() => {
+        this.errorMessage = 'Wrong username or password';
+        this.success = '';
+      }, 300);
     }
   }
 }
