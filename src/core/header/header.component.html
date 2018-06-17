@@ -4,36 +4,41 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="fa fa-bars"></span>
       </button>
-        <a id="logoA" (click)="emitClickEvent('title')"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>
+
       <!--<a routerLink="/"><img class="logoImage" src="../assets/images/betweenLogo.png">between</a>-->
     </div>
-    <div class="collapse navbar-collapse headerWithBorder" id="myNavbar" #navbar>
-      <ul class="nav navbar-nav navbar-right" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
+    <div class="container">
+    <div class="collapse navbar-collapse headerWithBorder centerize" id="myNavbar" #navbar>
+      <ul class="nav navbar-nav centerize" [ngClass]="{'scrollFadeOutLinks': isScrolling}">
         <li>
-          <a (click)="emitClickEvent('solution'); onMenuClick()">Solution</a>
+          <a id="logoA" (click)="emitClickEvent('title')"><img class="logoImage" src="../assets/images/betweenLogo.png"></a>
         </li>
         <li>
-          <a (click)="emitClickEvent('platform'); onMenuClick()">Platform</a>
+          <a (click)="emitClickEvent('solution'); onMenuClick()"><strong>Solution</strong></a>
         </li>
         <li>
-          <a (click)="emitClickEvent('aboutus'); onMenuClick()">About Us</a>
+          <a (click)="emitClickEvent('platform'); onMenuClick()"><strong>Platform</strong></a>
         </li>
         <li>
-          <a (click)="emitClickEvent('contact'); onMenuClick()">Contact</a>
+          <a (click)="emitClickEvent('aboutus'); onMenuClick()"><strong>About Us</strong></a>
+        </li>
+        <li>
+          <a (click)="emitClickEvent('contact'); onMenuClick()"><strong>Contact</strong></a>
         </li>
         <li *ngIf="authService.isAuthenticated()">
-          <a routerLink="/dashboard/home" (click)="onMenuClick()">Dashboard</a>
+          <a routerLink="/dashboard/home" (click)="onMenuClick()"><strong>Dashboard</strong></a>
         </li>
         <li *ngIf="!authService.isAuthenticated()">
-          <a [routerLink]="['/login']" (click)="onMenuClick()">Login</a>
+          <a [routerLink]="['/login']" (click)="onMenuClick()"><strong>Login</strong></a>
         </li>
         <li *ngIf="!authService.isAuthenticated()">
-          <a [routerLink]="['/register']" (click)="onMenuClick()">Register</a>
+          <a [routerLink]="['/register']" (click)="onMenuClick()"><strong>Register</strong></a>
         </li>
       </ul>
     </div>
   </div>
   <div class="progress-container" *ngIf="scrolledPercent > 0">
     <div class="progress-bar" id="myBar" [style.width]="scrolledPercent + '%'"></div>
+  </div>
   </div>
 </nav>

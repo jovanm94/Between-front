@@ -1,7 +1,7 @@
 <div class="sign-in-image">
 <form class="form-signin">
-  <img class="mb-4" src="../../assets/images/betweenLogo.png" alt="" width="80" height="80" routerLink="/">
-  <h1 class="h3 mb-3 font-weight-normal">Register to platform</h1>
+  <div class="mb-4" id="regLogPhoto" width="80" height="80" routerLink="/"></div>
+  <h1 class="h3 mb-3 font-weight-normal">Request a demo</h1>
 
   <div class="row">
     <div class="col-sm-12">
@@ -25,11 +25,11 @@
         <label for="inputContact" class="sr-only">Contact Number</label>
         <input type="contact" id="inputContact" class="form-control" placeholder="Contact Number" required disabled>
 
-        <label for="inputPassword" class="sr-only">Password</label>
+        <!-- <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required disabled>
 
         <label for="inputPasswordRepeat" class="sr-only">Repeat Password</label>
-        <input type="passwordRepeat" id="inputPasswordRepeat" class="form-control" placeholder="Repeat Password" required disabled>
+        <input type="passwordRepeat" id="inputPasswordRepeat" class="form-control" placeholder="Repeat Password" required disabled> -->
 
     </div>
   </div>
@@ -40,8 +40,8 @@
   </div>
   <div class="row">
     <div class="col-md-offset-3 col-md-6">
-      <button class="btn btn-lg btn-primary btn-block" (click)="register()" disabled>Register</button>
-      <p>We are currently updating our services. Registrations are temporarily unavailable. We Apologize for the inconvenience.</p>
+      <button class="btn btn-lg btn-primary btn-block" (click)="register()" disabled>Send request</button>
+      <!-- <p>We are currently updating our services. Registrations are temporary unavailable, we apologize for the inconvenience.</p> -->
     </div>
   </div>
 

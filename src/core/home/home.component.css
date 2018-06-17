@@ -1,19 +1,32 @@
+.logoHeroImage{
+  height: 200px;
+  width: 200px;
+}
+.lead{
+  font-size: 16px;
+}
 .heroButton{
-  background-color: #29adc7;
-    border-radius: 17px;
-    border: 1px solid #8fa99c;
-    color: #fff;
-    overflow: hidden;
-    margin-top: 50px;
-    height: 80px;
-    width: 250px;
-    transition: background-color 1s linear;
-    font-size: 20px;
+  background-color: #30c3a6;
+  border-radius: 17px;
+  border: 1px solid #8fa99c;
+  color: #fff;
+  overflow: hidden;
+  margin-top: 50px;
+  height: 60px;
+  width: 220px;
+  transition: background-color 1s linear;
+  font-size: 20px;
 }
 #arrowGif{
   width: 80px;
   padding-top: 100px;
   cursor: pointer;
+}
+.servicesIMG{
+  margin-top: 50px;
+}
+.img-circle{
+border: 2px solid #c7c7c7;
 }
 @media (min-width: 640px) {
   #arrowGif{
@@ -199,12 +212,13 @@
 padding-top: 5%;
 }
 #about{
+  color: white;
   width: 100%;
   padding-top: 50px;
   text-align: center;
   display: inline-block;
   padding-bottom: 80px;
-background-color: #efefef;
+background-color: #303742;
 }
 #section2{
   margin-left: 0;
@@ -218,7 +232,8 @@ background-color: #efefef;
   padding-bottom: 80px;
 }
 #section3{
-  background-color: #fafafa;
+  background-color: #303742;
+  color: #fafafa;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
@@ -226,6 +241,7 @@ background-color: #efefef;
   text-align: center;
   display: block;
   padding-bottom: 80px;
+  border-bottom: 5px solid #efefef;
 }
 #aboutUS{
   background-color: #efefef;
@@ -235,14 +251,13 @@ background-color: #efefef;
   padding-top: 50px;
   text-align: center;
   display: block;
-  padding-bottom: 120px;
 }
 .centerText{
   text-align: center;
 }
 #learnMore{
-  background-color: #303742;
-  color: white;
+  background-color: #efefef;
+  color: #303742;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
@@ -251,7 +266,7 @@ background-color: #efefef;
   padding-bottom: 120px;
 }
 .issuesAndSolutionsItem>h4{
-  color:#83f6aa;
+  color:#303742;
   text-align: center;
 }
 #issuesAndSolutions{
@@ -263,11 +278,10 @@ background-color: #efefef;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 50px;
   text-align: center;
   display: block;
-  background-color: #303742;
-  color: #fff;
+  background-color: #efefef;
+  color: #303742;
   padding-bottom: 80px;
 }
 
@@ -288,6 +302,14 @@ background-color: #efefef;
 }
 .h2Hero{
   margin-bottom: 80px;
+  text-align: center;
+}
+.h2About{
+  margin-bottom: 50px;
+  text-align: center;
+}
+.h2Solution{
+  margin-bottom: 0px;
   text-align: center;
 }
 .roundPanel{
@@ -334,7 +356,7 @@ background-color: #efefef;
   box-shadow: none;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid #303742;
+  border-bottom: 1px solid #efefef;
   margin-bottom: 25px;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -344,7 +366,7 @@ background-color: #efefef;
   padding: 10px;
   background-color: rgba(1,1,1,0);
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid #303742;
 }
 .contactIcons>span:hover{
   background-color: rgb(88, 93, 101);
@@ -352,7 +374,6 @@ background-color: #efefef;
 }
 .servicesText{
   padding: 30px;
-  text-align: justify;
 }
 .servicesImg{
   padding: 30px;
@@ -386,9 +407,7 @@ background-color: #efefef;
 }
 @media screen and (min-width: 993px) {
   .imgEcoSystem{
-    height: 85%!important;
-    width: 85%!important;
-
-    padding-left: 15%;
+    height: 90%!important;
+    width: 90%!important;
   }
 }

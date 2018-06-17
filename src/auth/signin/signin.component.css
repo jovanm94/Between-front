@@ -5,7 +5,7 @@
   text-align: center;
   padding: 40px;
   margin: auto;
-  background-color: #0000001f;
+  background-color:#303742;
   border-radius: 20px;
   box-shadow: 2px 1px 46px #ffffff61;
   -webkit-transition: box-shadow 700ms linear;
@@ -13,7 +13,7 @@
   transition:box-shadow 700ms linear;
 }
 .form-signin:hover{
-   box-shadow: 3px 5px 70px #ffffffff;
+   box-shadow:  3px 5px 30px #919191;
    -webkit-transition: box-shadow 700ms linear;
    -ms-transition:box-shadow 700ms linear;
    transition:box-shadow 700ms linear;
@@ -48,7 +48,7 @@
   display: block;
   width: 100%;
   text-align: center;
-  background: linear-gradient(to bottom right, #83f5a9, #008654, #303742);
+  background: #303742;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
