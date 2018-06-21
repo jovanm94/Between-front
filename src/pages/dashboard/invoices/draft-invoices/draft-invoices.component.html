@@ -1,5 +1,5 @@
 <div class="receivedInvoices">
-    <h4>
+  <h4>
     Draft Invoices
   </h4>
 
@@ -30,27 +30,27 @@
   </nav>
 
   <p-table [value]="invoices">
-      <ng-template pTemplate="header">
-          <tr>
-              <th>Invoice Number</th>
-              <th>To</th>
-              <th>Issuance Date</th>
-              <th>Payment Date</th>
-              <th>Amount</th>
-              <th>Action</th>
-          </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-invoice>
-          <tr>
-            <td>{{invoice.number}}</td>
-            <td>{{invoice.to}}</td>
-            <td>{{invoice.issuanceDate}}</td>
-            <td>{{invoice.paymentDate}}</td>
-            <td>{{invoice.paymentAmount}}</td>
-            <td id="verifyDecline">
-              <span id="verify" class="fa fa-check">&nbsp;Activate</span>&nbsp;&nbsp;&nbsp;
-            </td>
-          </tr>
-      </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Invoice Number</th>
+        <th>To</th>
+        <th>Issuance Date</th>
+        <th>Payment Date</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-invoice>
+      <tr>
+        <td>{{invoice.number}}</td>
+        <td>{{invoice.to}}</td>
+        <td>{{invoice.issuanceDate}}</td>
+        <td>{{invoice.paymentDate}}</td>
+        <td>{{invoice.paymentAmount}}</td>
+        <td id="verifyDecline">
+          <span id="verify" class="fa fa-check">&nbsp;Activate</span>&nbsp;&nbsp;&nbsp;
+        </td>
+      </tr>
+    </ng-template>
   </p-table>
 </div>

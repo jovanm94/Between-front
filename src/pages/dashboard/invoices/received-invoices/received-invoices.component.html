@@ -1,5 +1,5 @@
 <div class="receivedInvoices">
-    <h4>
+  <h4>
     Received Invoices
   </h4>
 
@@ -30,33 +30,33 @@
   </nav>
 
   <p-table [value]="invoices">
-      <ng-template pTemplate="header">
-          <tr>
-              <th>Invoice Number</th>
-              <th>From</th>
-              <th>Issuance Date</th>
-              <th>Payment Date</th>
-              <th>Payment amount</th>
-              <th>Verification Status</th>
-              <th>Action</th>
-          </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-invoice>
-          <tr [pSelectableRow]="invoice">
-              <td>{{invoice.number}}</td>
-              <td>{{invoice.from}}</td>
-              <td>{{invoice.issuanceDate}}</td>
-              <td>{{invoice.paymentDate}}</td>
-              <td>{{invoice.paymentAmount}}</td>
-              <td>
-                <p id="badgeGrey">{{invoice.status}}</p>
-              </td>
-              <td id="verifyDecline">
-                <button class="btn btn-success" type="text" (click)="confirm()" pButton icon="fa fa-check" label="Verify"></button>
-                <button class="btn btn-danger" type="text" pButton icon="fa fa-ban" label="Decline"></button>
-              </td>
-          </tr>
-      </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Invoice Number</th>
+        <th>From</th>
+        <th>Issuance Date</th>
+        <th>Payment Date</th>
+        <th>Payment amount</th>
+        <th>Verification Status</th>
+        <th>Action</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-invoice>
+      <tr [pSelectableRow]="invoice">
+        <td>{{invoice.number}}</td>
+        <td>{{invoice.from}}</td>
+        <td>{{invoice.issuanceDate}}</td>
+        <td>{{invoice.paymentDate}}</td>
+        <td>{{invoice.paymentAmount}}</td>
+        <td>
+          <p id="badgeGrey">{{invoice.status}}</p>
+        </td>
+        <td id="verifyDecline">
+          <button class="btn btn-success" type="text" (click)="confirm()" pButton icon="fa fa-check" label="Verify"></button>
+          <button class="btn btn-danger" type="text" pButton icon="fa fa-ban" label="Decline"></button>
+        </td>
+      </tr>
+    </ng-template>
   </p-table>
 </div>
 

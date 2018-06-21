@@ -1,32 +1,28 @@
 <div class="requestInvoiceFinancing">
-    <h4>
+  <h4>
     Request Invoice Financing
   </h4>
 
   <p-table [value]="financiers">
-      <ng-template pTemplate="header">
-          <tr>
-              <th>Invoice Number</th>
-              <th>Amount</th>
-              <th>Verification Status</th>
-              <th id="anotherColor">Financier</th>
-
-          </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-financier>
-          <tr>
-              <td>{{financier.invoiceNumber}}</td>
-              <td>{{financier.amount}}</td>
-              <td>
-                <p id="badge">{{financier.status}}</p>
-              </td>
-              <td>{{financier.name}}</td>
-          </tr>
-      </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Invoice Number</th>
+        <th>Amount</th>
+        <th>Verification Status</th>
+        <th id="anotherColor">Financier</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-financier>
+      <tr>
+        <td>{{financier.invoiceNumber}}</td>
+        <td>{{financier.amount}}</td>
+        <td>
+          <p id="badge">{{financier.status}}</p>
+        </td>
+        <td>{{financier.name}}</td>
+      </tr>
+    </ng-template>
   </p-table>
 
-
-<button id="submitRequestBtn" disabled><span class="fa fa-refresh"></span>&nbsp;SUBMIT REQUEST(S)</button>
-
-
+  <button id="submitRequestBtn" disabled><span class="fa fa-refresh"></span>&nbsp;SUBMIT REQUEST(S)</button>
 </div>

@@ -17,7 +17,6 @@
         <a routerLink="./home" routerLinkActive="active-dashboard-menu-item">Dashboard</a><br>
       </div>
 
-
       <p-accordionTab header="Invoice Verification">
         <div class="podMenu podMenuFirst" [ngClass]="{'activeTabDashboard': appService.getCurrentRoute() == '/dashboard/invoices/received'}">
           <a routerLink="./invoices/received" routerLinkActive="active-dashboard-menu-item">Received Invoices</a><br>
@@ -46,7 +45,6 @@
       </div>
 
     </p-accordion>
-
 
     <div class="dashboard-editor">
       <router-outlet></router-outlet>

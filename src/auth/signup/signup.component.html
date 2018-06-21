@@ -1,24 +1,23 @@
 <div class="sign-in-image">
-<form class="form-signin">
-  <div class="mb-4" id="regLogPhoto" width="80" height="80" routerLink="/"></div>
-  <h1 class="h3 mb-3 font-weight-normal">Request a demo</h1>
-
-  <div class="row">
-    <div class="col-sm-12">
-      <label for="inputName" class="sr-only">Name</label>
-      <input type="name" id="inputName" class="form-control" placeholder="Name" required disabled>
-
-      <label for="inputSurname" class="sr-only">Surname</label>
-      <input type="surname" id="inputSurname" class="form-control" placeholder="Surname" required disabled>
-
-      <label for="inputAddress" class="sr-only">Address</label>
-      <input type="address" id="inputAddress" class="form-control" placeholder="Address" required disabled>
-
-      <label for="inputCity" class="sr-only">City</label>
-      <input type="city" id="inputCity" class="form-control" placeholder="City" required disabled>
-
+  <form class="form-signin">
+    <div class="mb-4" id="regLogPhoto" width="80" height="80" routerLink="/">
     </div>
-    <div class="col-sm-12">
+    <h1 class="h3 mb-3 font-weight-normal">Request a demo</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" id="inputName" class="form-control" placeholder="Name" required disabled>
+
+        <label for="inputSurname" class="sr-only">Surname</label>
+        <input type="surname" id="inputSurname" class="form-control" placeholder="Surname" required disabled>
+
+        <label for="inputAddress" class="sr-only">Address</label>
+        <input type="address" id="inputAddress" class="form-control" placeholder="Address" required disabled>
+
+        <label for="inputCity" class="sr-only">City</label>
+        <input type="city" id="inputCity" class="form-control" placeholder="City" required disabled>
+      </div>
+      <div class="col-sm-12">
         <label for="inputCountry" class="sr-only">Country</label>
         <input type="country" id="inputCountry" class="form-control" placeholder="Country" required disabled>
 
@@ -30,27 +29,25 @@
 
         <label for="inputPasswordRepeat" class="sr-only">Repeat Password</label>
         <input type="passwordRepeat" id="inputPasswordRepeat" class="form-control" placeholder="Repeat Password" required disabled> -->
-
+      </div>
     </div>
-  </div>
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me" disabled>Remember me
-    </label>
-  </div>
-  <div class="row">
-    <div class="col-md-offset-3 col-md-6">
-      <button class="btn btn-lg btn-primary btn-block" (click)="register()" disabled>Send request</button>
-      <!-- <p>We are currently updating our services. Registrations are temporary unavailable, we apologize for the inconvenience.</p> -->
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me" disabled>Remember me
+      </label>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+        <button class="btn btn-lg btn-primary btn-block" (click)="register()" disabled>Send request</button>
+        <!-- <p>We are currently updating our services. Registrations are temporary unavailable, we apologize for the inconvenience.</p> -->
+      </div>
+    </div>
 
-  <div class="checkbox mb-3">
-    <label>
-      Already have an account? <span routerLink="/login"><u>Login here</u></span>
-    </label>
-  </div>
-
-  <p class="mt-5 mb-3 text-muted" style="margin-top: 20px;">&copy; Between 2017-2018</p>
-</form>
+    <div class="checkbox mb-3">
+      <label>
+        Already have an account? <span routerLink="/login"><u>Login here</u></span>
+      </label>
+    </div>
+    <p class="mt-5 mb-3 text-muted" style="margin-top: 20px;">&copy; Between 2017-2018</p>
+  </form>
 </div>

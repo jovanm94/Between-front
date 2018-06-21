@@ -1,5 +1,5 @@
 <div class="receivedInvoices">
-    <h4>
+  <h4>
     Verified Invoices
   </h4>
 
@@ -29,36 +29,34 @@
     </div>
   </nav>
 
-
-
   <p-table [value]="invoices">
-      <ng-template pTemplate="header">
-          <tr>
-              <th>Invoice Number</th>
-              <th>From</th>
-              <th>Issuance Date</th>
-              <th>Payment Date</th>
-              <th>Amount</th>
-              <th>Verification Status</th>
-              <th>Action</th>
-              <!-- <th>Brand</th>
-              <th>Color</th> -->
-          </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-invoice>
-          <tr>
-            <td>{{invoice.number}}</td>
-            <td>{{invoice.from}}</td>
-            <td>{{invoice.issuanceDate}}</td>
-            <td>{{invoice.paymentDate}}</td>
-            <td>{{invoice.paymentAmount}}</td>
-            <td>
-              <p id="badge">{{invoice.status}}</p>
-            </td>
-            <td id="verifyDecline">
-              <span id="decline" class="fa fa-ban">&nbsp;Flag invalid</span>
-            </td>
-          </tr>
-      </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Invoice Number</th>
+        <th>From</th>
+        <th>Issuance Date</th>
+        <th>Payment Date</th>
+        <th>Amount</th>
+        <th>Verification Status</th>
+        <th>Action</th>
+        <!-- <th>Brand</th>
+        <th>Color</th> -->
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-invoice>
+      <tr>
+        <td>{{invoice.number}}</td>
+        <td>{{invoice.from}}</td>
+        <td>{{invoice.issuanceDate}}</td>
+        <td>{{invoice.paymentDate}}</td>
+        <td>{{invoice.paymentAmount}}</td>
+        <td>
+          <p id="badge">{{invoice.status}}</p>
+        </td>
+        <td id="verifyDecline">
+          <span id="decline" class="fa fa-ban">&nbsp;Flag invalid</span>
+        </td>
+      </tr>
+    </ng-template>
   </p-table>
 </div>
