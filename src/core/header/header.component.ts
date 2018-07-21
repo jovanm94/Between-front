@@ -26,6 +26,17 @@ export class HeaderComponent implements OnChanges {
   emitClickEvent(pageName: string) {
     this.eventsService.emitEvent(pageName);
   }
+  onMobileMenuButtonClick(event){
+    const body = document.getElementsByTagName('body')[0];
+    const myNavbar = document.getElementById('myNavbar');
+    body.classList.add('no-scroll');
+
+    for(var i=0; i<myNavbar.classList.length; i++){
+      if(myNavbar.classList[i]=="in"){
+        body.classList.remove('no-scroll');
+      }
+    }
+  }
 
   onMenuClick() {
     this.renderer.setElementClass(this.el.nativeElement.querySelector('.navbar-collapse'), 'in', false);

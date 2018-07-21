@@ -22,8 +22,8 @@
       </div>
       <div class="col-xs-6 issuesAndSolutionsItem"><h3 class="text-center">Invoice financing</h3>
       </div>
-      <div class="row">
-        <div class="col-xs-6" #solution>
+      <div class="col-xs-12">
+        <div class="col-xs-6">
           <!--<h4>Counterparty relationship-->
           <!--</h4>-->
           <p>Lack of standardization and interoperability between systems companies use leads to high overhead costs and complex internal processes associated to Open Items Statement matching between counterparties.
@@ -37,7 +37,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="col-xs-12">
         <div class="col-xs-6">
           <!--<h4>Invoice financing-->
           <!--</h4>-->
@@ -52,7 +52,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="col-xs-12">
         <div class="col-xs-6">
           <!--<h4>Financial analysis-->
           <!--</h4>-->
@@ -77,26 +77,53 @@
       <!--</div>-->
     </div>
     <div class="col-xs-12 col-md-12">
-      <h2 class="h2Solution">Solution</h2>
+      <h2 class="h2Solution" #solution>Solution</h2>
       <h3 class="h2Solution">Three-layer Platform</h3>
-      <a>
+
         <!--<img class="featurette-image img-responsive companyImg imgEcoSystem" src="../../assets/images/ecosystem.png">-->
-        <img class="featurette-image img-responsive companyImg imgEcoSystem" src="../../assets/images/layers.png">
-      </a>
+        <div class="col-xs-4">
+            <p class="straightenText1" [@scrollText2]="state">
+            <strong class="straightenStrong1" [@scrollText2]="state">2. Invoice Financing Intermediary</strong><br/>
+              Reducing time needed to obtain consent in invoice financing process.
+            </p>
+        </div>
+        <div class="col-xs-4 arhImage">
+        <div class="panel arhitecture1" [@scrollAnimation3]="state">
+          <img class="logoImage" src="../assets/images/betweenLogo.png">
+        </div>
+        <div class="panel arhitecture2" [@scrollAnimation2]="state">
+        </div>
+        <div class="panel arhitecture3" [@scrollAnimation1]="state">
+        </div>
+        </div>
+        <div class="col-xs-4">
+            <p class="straightenText2" [@scrollText2]="state">
+            <strong class="straightenStrong2" [@scrollText2]="state">3. Continuous Liquidity Analytics</strong><br/>
+            Allows companies to improve working capital management and supplements credit risk assessment.
+            </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <p class="straightenText3" [@scrollText2]="state">
+            <strong class="straightenStrong3" [@scrollText2]="state">1. Invoice Verification</strong><br/>
+            Foundation for other platform functionalities; Real-time Open Items Statement matching as a result of verified invoices.
+            </p>
+        </div>
+        <!-- <img class="featurette-image img-responsive companyImg imgEcoSystem" src="../../assets/images/layers.png"> -->
+    
     </div>
   </div>
 </div>
 
   <!-- First Featurette -->
-<div id="about">
-  <h2>Platform</h2>
+<div id="about" >
+  <h2 #platform>Platform</h2>
   <p class="lead">Platform in its core integrates invoice verification protocol through company’s upload of issued
     and received invoices for verification by the counterparty of the transaction, while the event of
     the transaction is recorded on an immutable distributed ledger. The protocol is powered by
     Hyperledger Fabric blockchain technology.
   </p>
   <br>
-  <h3 class="h2Solution" #platform>Invoice verification protocol</h3>
+  <h3 class="h2Solution">Invoice verification protocol</h3>
   <img class="featurette-image img-responsive companyImg imgEcoSystem" src="../../assets/images/architecture.png">
 
   <div class="row">
@@ -112,6 +139,10 @@
         </div>
       </div>
 
+      <div class="col-xs-12 displayHR">
+        <hr>
+      </div>
+
       <div class="col-md-4 servicesImg">
         <div class="servicesText col-xs-12">
           <h3 class="text-center">Invoice financing module</h3><br>
@@ -120,6 +151,10 @@
           </p>
           <i> Interest rate and transaction costs are agreed outside of the platform.</i>
         </div>
+      </div>
+
+      <div class="col-xs-12 displayHR">
+        <hr>
       </div>
 
       <div class="col-md-4 servicesImg">
@@ -134,7 +169,7 @@
 </div>
 
 <!-- Page Content -->
-<div class="row" id="aboutUS" #aboutus>
+<div class="row" id="aboutUS">
   <div class="container">
     <div class="col-md-12"><h2 class="h2About">About us</h2>
     </div>
@@ -163,7 +198,7 @@
       <h2>Team</h2><br><br>
     </div>
 
-    <div class="col-sx-12 col-sm-6 col-md-3 servicesImg">
+    <div class="col-sx-12 col-md-4 servicesImg">
       <a>
         <img class="featurette-image img-circle img-responsive avatarImg" src="../../assets/images/miljan.jpg">
       </a>
@@ -177,7 +212,7 @@
         Msc in Business Economics
       </i>
     </div>
-    <div class="col-sx-12 col-sm-6 col-md-3 servicesImg">
+    <div class="col-sx-12 col-md-4 servicesImg">
       <a>
       <img class="featurette-image img-circle img-responsive avatarImg" src="../../assets/images/matija.jpg">
       </a>
@@ -192,7 +227,7 @@
         Msc in Global Finance
       </i>
     </div>
-    <div class="col-sx-12 col-sm-6 col-md-3 servicesImg">
+    <div class="col-sx-12 col-md-4 servicesImg">
       <a>
       <img class="featurette-image img-circle img-responsive avatarImg" src="../../assets/images/jovan.png">
       </a>
@@ -202,20 +237,6 @@
       </div>
       <span class="fa fa-minus"></span><br>
       <i>Co-founder<br>
-        Product development<br>
-        Msc in Software Engineering and Computer Sciences
-      </i>
-    </div>
-    <div class="col-sx-12 col-sm-6 col-md-3 servicesImg">
-      <a>
-      <img class="featurette-image img-circle img-responsive avatarImg" src="../../assets/images/mladen.jpg">
-      </a>
-      <h3>Mladen Tušup</h3>
-      <div class="contactIcons">
-        <span class="fa fa-linkedin" (click)="onNavigate('mladen')"></span>&nbsp;<br><br>
-      </div>
-      <span class="fa fa-minus"></span><br>
-      <i>Techical Advisor<br>
         Product development<br>
         Msc in Software Engineering and Computer Sciences
       </i>

@@ -8,7 +8,7 @@
   <link rel="icon" type="image/x-icon" href="assets/images/betweenLogo.png">
   <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
 </head>
-<body>
+<body [ngClass]="{'no-scroll': mobileMenuOpened}" class="no-horizontal-scroll">
   <app-root>Loading...</app-root>
 </body>
 </html>

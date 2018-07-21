@@ -12,6 +12,7 @@ export class AppComponent {
 
   isScrolling = false;
   scrolledPercent = 0;
+  mobileMenuOpened = false;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
@@ -20,6 +21,8 @@ export class AppComponent {
     let height = $event.target.documentElement.scrollHeight - $event.target.documentElement.clientHeight;
     this.scrolledPercent = (winScroll / height) * 100;
   }
+
+
 
   constructor(public appService: AppService) { }
 

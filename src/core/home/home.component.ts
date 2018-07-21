@@ -1,12 +1,95 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { EventsService } from '../../services/events.service';
 import { Subscription } from 'rxjs/Subscription';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [
+    trigger('scrollAnimation1', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0) rotate(45deg)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateX(-100%) rotate(45deg)"
+      })),
+
+      transition('show => hide', animate('0.5s ease-out')),
+      transition('hide => show', animate('1s 100ms ease-in'))
+    ]),
+    trigger('scrollAnimation2', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0) rotate(45deg)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateX(-100%) rotate(45deg)"
+      })),
+      transition('show => hide', animate('0.5s ease-out')),
+      transition('hide => show', animate('1s 600ms ease-in'))
+    ]),
+    trigger('scrollAnimation3', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0) rotate(45deg)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateX(-100%) rotate(45deg)"
+      })),
+      transition('show => hide', animate('0.5s ease-out')),
+      transition('hide => show', animate('1s 1100ms ease-in'))
+    ]),
+    trigger('scrollText1', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateX(-100%)"
+      })),
+      transition('show => hide', animate('0.5s ease-out')),
+      transition('hide => show', animate('1.5s 100ms ease-in'))
+    ]),
+    trigger('scrollText2', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateX(-100%)"
+      })),
+    transition('show => hide', animate('0.5s ease-out')),
+      transition('hide => show', animate('1.5s 600ms ease-in'))
+    ]),
+    trigger('scrollText3', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateX(-100%)"
+      })),
+      transition('show => hide', animate('0.5s ease-out')),
+      transition('hide => show', animate('1.5s 1100ms ease-in'))
+    ])
+  ]
 })
+
 export class HomeComponent implements OnInit, OnDestroy {
 
   @ViewChild('contact') contact: ElementRef;
@@ -16,8 +99,23 @@ export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('title') title: ElementRef;
   @ViewChild('solution') solution: ElementRef;
 
+  state = 'hide'
+
+   @HostListener('window:scroll', ['$event'])
+     checkScroll() {
+       const componentPosition = this.el.nativeElement.offsetTop;
+       const componentPositionUnder = this.el.nativeElement.offsetTop+600;
+       const scrollPosition = window.pageYOffset
+
+       if (scrollPosition >= componentPosition && scrollPosition <= componentPositionUnder) {
+         this.state = 'hide'
+       } else{
+         this.state = 'show'
+       }
+     }
+
   eventSubscription: Subscription;
-  constructor(private eventsService: EventsService) {
+  constructor(private eventsService: EventsService, public el: ElementRef) {
     this.eventSubscription = this.eventsService.navItem.subscribe((elementName: string) => {
       switch (elementName) {
         case 'contact':

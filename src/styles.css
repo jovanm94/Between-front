@@ -21,7 +21,9 @@ body{
     font-family: 'Raleway', sans-serif!important;
       background-color: #303742;
 }
-
+.displayHR{
+  display: none;
+}
 .navbar-header img {
   margin: 10px 300px 10px 10px;
 
@@ -166,6 +168,9 @@ footer {
 }
 
 @media (max-width: 425px) {
+  .displayHR{
+    display: inline;
+  }
   .headline{
     padding-top: 100px;
   }
@@ -194,6 +199,7 @@ footer {
 }
 
 @media(max-width:375px) {
+
   .featurette-divider {
     margin: 10px 0;
   }
@@ -373,4 +379,17 @@ font-size: 35px;
 #navbar > li {
     display: inline-block;
     float:none;
+}
+
+.hideme
+{
+    opacity:0;
+}
+.no-scroll{
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+.no-horizontal-scroll{
+  overflow-x: hidden;
 }
